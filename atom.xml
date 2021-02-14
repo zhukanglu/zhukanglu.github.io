@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-14T09:53:49.028Z</updated>
+  <updated>2021-02-14T11:23:07.942Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/02/14/hexo-yu-fa-1/"/>
     <id>http://example.com/2021/02/14/hexo-yu-fa-1/</id>
     <published>2021-02-14T09:48:55.000Z</published>
-    <updated>2021-02-14T09:53:49.028Z</updated>
+    <updated>2021-02-14T11:23:07.942Z</updated>
     
     
       
@@ -36,6 +36,8 @@
     
     
     
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
   </entry>
   
   <entry>
@@ -43,7 +45,7 @@
     <link href="http://example.com/2021/02/14/hexo-admin/"/>
     <id>http://example.com/2021/02/14/hexo-admin/</id>
     <published>2021-02-14T09:44:16.000Z</published>
-    <updated>2021-02-14T09:47:23.493Z</updated>
+    <updated>2021-02-14T11:28:08.397Z</updated>
     
     
       
@@ -56,6 +58,12 @@
     
     
     
+    <category term="course" scheme="http://example.com/categories/course/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="admin" scheme="http://example.com/tags/admin/"/>
     
   </entry>
   
@@ -64,7 +72,7 @@
     <link href="http://example.com/2021/02/14/git-install/"/>
     <id>http://example.com/2021/02/14/git-install/</id>
     <published>2021-02-14T04:20:31.000Z</published>
-    <updated>2021-02-14T09:24:34.558Z</updated>
+    <updated>2021-02-14T11:19:17.883Z</updated>
     
     
       
@@ -77,6 +85,10 @@
     
     
     
+    <category term="course" scheme="http://example.com/categories/course/"/>
+    
+    
+    <category term="git" scheme="http://example.com/tags/git/"/>
     
   </entry>
   
@@ -85,7 +97,7 @@
     <link href="http://example.com/2021/02/13/mysql-for-windows/"/>
     <id>http://example.com/2021/02/13/mysql-for-windows/</id>
     <published>2021-02-13T12:09:01.000Z</published>
-    <updated>2021-02-13T12:15:49.330Z</updated>
+    <updated>2021-02-14T11:23:39.491Z</updated>
     
     
       
@@ -99,6 +111,10 @@
     
     
     
+    <category term="course" scheme="http://example.com/categories/course/"/>
+    
+    
+    <category term="mysql" scheme="http://example.com/tags/mysql/"/>
     
   </entry>
   
@@ -107,7 +123,7 @@
     <link href="http://example.com/2021/02/13/emoji/"/>
     <id>http://example.com/2021/02/13/emoji/</id>
     <published>2021-02-13T07:50:26.000Z</published>
-    <updated>2021-02-14T09:16:37.833Z</updated>
+    <updated>2021-02-14T11:17:35.803Z</updated>
     
     
       
@@ -129,6 +145,10 @@
     
     
     
+    <category term="funny" scheme="http://example.com/categories/funny/"/>
+    
+    
+    <category term="emoji" scheme="http://example.com/tags/emoji/"/>
     
   </entry>
   
@@ -137,7 +157,7 @@
     <link href="http://example.com/2021/02/12/build-hexo/"/>
     <id>http://example.com/2021/02/12/build-hexo/</id>
     <published>2021-02-12T08:23:49.000Z</published>
-    <updated>2021-02-12T08:25:02.729Z</updated>
+    <updated>2021-02-14T11:13:28.618Z</updated>
     
     
       
@@ -150,6 +170,10 @@
     
     
     
+    <category term="blog" scheme="http://example.com/categories/blog/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
     
   </entry>
   
@@ -158,7 +182,7 @@
     <link href="http://example.com/2021/02/12/hello-world/"/>
     <id>http://example.com/2021/02/12/hello-world/</id>
     <published>2021-02-12T01:27:01.839Z</published>
-    <updated>2021-02-12T01:27:01.839Z</updated>
+    <updated>2021-02-14T11:20:05.021Z</updated>
     
     
       
@@ -171,6 +195,10 @@
     
     
     
+    <category term="demo" scheme="http://example.com/categories/demo/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
     
   </entry>
   
