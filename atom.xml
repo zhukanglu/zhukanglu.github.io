@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-14T11:23:07.942Z</updated>
+  <updated>2021-02-15T09:44:22.193Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,104 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git多账号</title>
+    <link href="http://example.com/2021/02/15/git-duo-zhang-hao/"/>
+    <id>http://example.com/2021/02/15/git-duo-zhang-hao/</id>
+    <published>2021-02-15T09:42:44.000Z</published>
+    <updated>2021-02-15T09:44:22.193Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Git-设置多个账号&quot;&gt;&lt;a href=&quot;#Git-设置多个账号&quot; class=&quot;headerlink&quot; title=&quot;Git 设置多个账号&quot;&gt;&lt;/a&gt;Git 设置多个账号&lt;/h1&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Anacoda and Pycahrm</title>
+    <link href="http://example.com/2021/02/14/anacoda-and-pycahrm/"/>
+    <id>http://example.com/2021/02/14/anacoda-and-pycahrm/</id>
+    <published>2021-02-14T14:20:10.000Z</published>
+    <updated>2021-02-14T14:21:22.980Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Anaconda与Pycahrm的”联姻”&quot;&gt;&lt;a href=&quot;#Anaconda与Pycahrm的”联姻”&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="http://example.com/categories/AI/"/>
+    
+    
+    <category term="anacoda" scheme="http://example.com/tags/anacoda/"/>
+    
+    <category term="pycahrm" scheme="http://example.com/tags/pycahrm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tensorflow</title>
+    <link href="http://example.com/2021/02/14/tensorflow/"/>
+    <id>http://example.com/2021/02/14/tensorflow/</id>
+    <published>2021-02-14T14:17:09.000Z</published>
+    <updated>2021-02-14T14:21:39.540Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;9步教你安装完成tensorflow与pytorch&quot;&gt;&lt;a href=&quot;#9步教你安装完成tensorflow与pytorch&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="http://example.com/categories/AI/"/>
+    
+    
+    <category term="tensorflow" scheme="http://example.com/tags/tensorflow/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anacoda</title>
+    <link href="http://example.com/2021/02/14/anacoda/"/>
+    <id>http://example.com/2021/02/14/anacoda/</id>
+    <published>2021-02-14T13:49:44.000Z</published>
+    <updated>2021-02-14T13:52:46.153Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Anaconda介绍、安装及使用教程&quot;&gt;&lt;a href=&quot;#Anaconda介绍、安装及使用教程&quot; class=&quot;headerlink&quot; title=&quot;Anaconda介绍、安装及使用教程&quot;&gt;&lt;/a&gt;Anaconda介绍、安装及使用教程&lt;/h1&gt;&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="course" scheme="http://example.com/categories/course/"/>
+    
+    
+    <category term="anaconda" scheme="http://example.com/tags/anaconda/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo语法</title>

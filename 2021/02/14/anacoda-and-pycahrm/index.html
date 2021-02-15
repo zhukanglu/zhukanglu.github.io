@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="build hexo, MiLoog">
+    <meta name="keywords" content="Anacoda and Pycahrm, MiLoog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>build hexo | MiLoog</title>
+    <title>Anacoda and Pycahrm | MiLoog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -250,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">build hexo</h1>
+                    <h1 class="description center-align post-title">Anacoda and Pycahrm</h1>
                 </div>
             </div>
         </div>
@@ -371,8 +371,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/anacoda/">
+                                <span class="chip bg-color">anacoda</span>
+                            </a>
+                        
+                            <a href="/tags/pycahrm/">
+                                <span class="chip bg-color">pycahrm</span>
                             </a>
                         
                     </div>
@@ -383,8 +387,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/blog/" class="post-category">
-                                blog
+                            <a href="/categories/AI/" class="post-category">
+                                AI
                             </a>
                         
                     </div>
@@ -396,7 +400,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-02-12
+                    2021-02-14
                 </div>
                 
 
@@ -405,7 +409,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.1k
+                    665
                 </div>
                 
 
@@ -425,111 +429,58 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="基于Hexo搭建个人博客"><a href="#基于Hexo搭建个人博客" class="headerlink" title="基于Hexo搭建个人博客"></a>基于Hexo搭建个人博客</h1><p>前言：什么是 Hexo(<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/)%EF%BC%8CHexo]%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BF%AB%E9%80%9F%E3%80%81%E7%AE%80%E6%B4%81%E4%B8%94%E9%AB%98%E6%95%88%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E3%80%82Hexo">https://hexo.io/zh-cn/docs/)，Hexo]是一个快速、简洁且高效的博客框架。Hexo</a> 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。因此我们可以通过Hexo+Github搭建博客并且部署到服务器上。</p>
-<h4 id="1、基本环境的搭建"><a href="#1、基本环境的搭建" class="headerlink" title="1、基本环境的搭建"></a>1、基本环境的搭建</h4><p>  搭建博客之前我们先要安装需要的环境、这里以Windows系统作为演示、其他系统类似。<br>首先、需要安装 Node.js(<a target="_blank" rel="noopener" href="http://nodejs.cn/download/">http://nodejs.cn/download/</a>) 和 Git(<a target="_blank" rel="noopener" href="https://git-scm.com/downloads)%EF%BC%8C%E5%A4%A7%E5%AE%B6%E5%B0%BD%E9%87%8F%E5%8E%BB%E4%B8%8B%E8%BD%BD.exe%E6%89%A9%E5%B1%95%E5%90%8D%E7%9A%84%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%EF%BC%8C%E8%BF%99%E6%A0%B7%E7%9A%84%E5%A5%BD%E5%A4%84%E6%98%AF%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E3%80%81%E7%9C%81%E5%8E%BB%E4%BA%86%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE%E3%80%82%E5%AE%89%E8%A3%85%E7%89%88%E6%9C%AC%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%9A%84%E7%89%88%E6%9C%AC%E3%80%82%E5%A6%82%E6%9E%9C%E6%9C%89%E9%97%AE%E9%A2%98%E5%8D%B8%E8%BD%BD%E5%AE%89%E8%A3%85%E6%97%A7%E7%89%88%E3%80%82">https://git-scm.com/downloads)，大家尽量去下载.exe扩展名的可执行文件，这样的好处是一键安装、省去了一些配置。安装版本也可以安装最新的版本。如果有问题卸载安装旧版。</a></p>
-<p>安装完成之后、打开CMD</p>
-<p>验证Node.js的方法</p>
-<pre class="line-numbers language-none"><code class="language-none">node -v
-npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-<h5 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h5><p>下载速度可能很慢。Winddows用户可以前往 淘宝 Git for Windows(<a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/git-for-windows/">https://npm.taobao.org/mirrors/git-for-windows/</a>) 镜像 下载 git 安装包。<br>验证Git的方法(CMD中输入)<br>git –verion<br>同样输入后能够显示版本说明安装成功。</p>
-<h4 id="2、博客搭建"><a href="#2、博客搭建" class="headerlink" title="2、博客搭建"></a>2、博客搭建</h4><p>安装Hexo</p>
-<p>通过npm命令安装Hexo(CMD中输入)</p>
-<p>npm install -g hexo-cli</p>
-<p>之后是一些常用的Hexo命令、更详细的参考官方文档(<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a>)</p>
-<p>init</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo init [folder]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>创建Hexo网站、folder为文件名、如图</p>
-<p>这样就代表创建成功。但是发现npm报警告(<code>注意</code>:在windows环境，所以可以忽略这个警告、如果是其他系统、可以通过查阅资料解决。)</p>
-<p>Hexo的目录结构：</p>
-<p>|– _config.yml<br>|– package.json<br>|– scaffolds<br>|– source<br>  |– _posts<br>|– public<br>|– themes<br>|– .gitignore</p>
-<p>_config.yml：网站的全局配置文件，设置包括网站标题、副标题、作者、关键字和描述信息等。<br>package.json：框架的基本参数信息和它所依赖的插件，在 npm 安装时使用 –save 保存进去。<br>scaffolds：本意是 “脚手架” 的意思，这里引申为模板文件夹。当你 hexo new [layout(布局)] [title] 的时候，Hexo 会根据该文件夹下的对应文件进行初始化构建。<br>source：正如其名，source 文件夹存储一些直接来自用户的文件，它很重要，如果不出意外你的文章就是保存在这个文件夹下（_posts）。_posts 目录下的md文件，会被编译成 html 文件，放到 public 文件夹下。<br>public：参考 source 文件夹，在初始化后是没有 public 文件夹的，除非 hexo g 编译生成静态文件后，public 文件夹会自动生成。使用 hexo clean 清除 db.json 和 public 文件夹下的所有文件。<br>themes：主题文件夹，存储主题。主题可以在 Github 上 clone。<br>.gitignore：.gitignore 文件作用是声明不被 git 记录的文件，hexo init <folder> 也会产生一个 .gitignore：文件，可以先删除或者直接编辑，对hexo不会有影响。</folder></p>
-<p>打开_config.yml文件、找到以下的地方、需要自己配置的几个地方：</p>
-<h1 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h1><p>title: 网站标题       //网站标题<br>subtitle: 副标题     //副标题<br>description: 描述信息  //描述信息<br>keywords: 关键字     //关键字<br>author: 作者    //作者<br>language: zh-CN       //语言 可以在 /themes/landscape/languages 找到支持的语言<br>timezone: Asia/Shanghai    //时区 Asia/Shanghai</p>
-<p>之后的命令一定要cd到文件夹(博客根目录)中进行操作！！！</p>
-<p>这里可以先安装npm install <a href="mailto:cheerio@0.22.0">cheerio@0.22.0</a> –save,在后面使用主题可能会报错，所以先安装这个。</p>
-<p>clean</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo clean<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-<p>server<br><code>hexo server</code><br>或(简写)<br><code>hexo s</code></p>
-<p>启动服务器。默认访问的网址： <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> , 还可以带参数。</p>
-<p>-p, –port ：重设端口<br>-s, –static：只使用静态文件<br> -l, –log：启动日记记录，使用覆盖记录格式 </p>
-<p>启动成功如图：</p>
-<p>Hexo页面</p>
-<p>generate<br>hexo generate<br>或(简写)<br>hexo g</p>
-<p>生成静态文件。</p>
-<p>deploy<br>hexo deploy<br>或(简写)<br>hexo d</p>
-<p>部署网站。同样可以接参数。</p>
-<p>-g, –generate：部署之前预先生成静态文件 。</p>
-<p>-m,–message:</p>
-<p>这里与后面部署到Github/Gitee上结合使用。</p>
-<p>new</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo new [title]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>新建一篇文章。title为文章名。<br>例子：hexo new “blog”</p>
-<p>创建的md文件在 /source/_posts/blog.md 中、一样可以接参数。</p>
-<p>-p, –path：自定义新文章的路径<br>|-r, –replace：如果存在同名文章，将其替换<br>-s, –slug：文章的 Slug，作为新文章的文件名和发布后的 URL</p>
-<p>一个基本的步骤：</p>
-<pre class="line-numbers language-none"><code class="language-none">hexo new "blog"
-
-hexo clean
-
-hexo s(用于本地调试)
-
-hexo g
-
-hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>到这里、你应该了解如何在本地搭建Hexo博客了。接下来是主题美化。</p>
-<h4 id="3、主题美化"><a href="#3、主题美化" class="headerlink" title="3、主题美化"></a>3、主题美化</h4><p>使用主题可以让我们的博客更加的好看。所以我们选择下载自己喜欢的主题。</p>
-<p>Hexo默认使用的是landscape官方主题、我们可以通过下载其他主题进行更换。<br>1、通过官方主题网站(<a target="_blank" rel="noopener" href="https://hexo.io/themes/)%E5%8F%AF%E4%BB%A5%E6%89%BE%E5%88%B0%E4%B8%BB%E9%A2%98%E3%80%82">https://hexo.io/themes/)可以找到主题。</a><br>2、直接在Github中搜索hexo-theme相关的内容。</p>
-<p>下载主题</p>
-<p>git clone Github主题地址 themes/文件名</p>
-<p>例如我想下载 Butterfly 主题、只需要git clone <a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">https://github.com/jerryc127/hexo-theme-butterfly</a> themes/Butterfly 就可以了。</p>
-<p>下载完成之后配置_config.yml、改成上面的那个文件名。</p>
-<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></h2><h2 id="Themes-https-hexo-io-themes"><a href="#Themes-https-hexo-io-themes" class="headerlink" title="Themes: https://hexo.io/themes/"></a>Themes: <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></h2><p>theme: Butterfly</p>
-<p>这里介绍我喜欢的几个主题、当然也可以自己去找:<br>Butterfly(<a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">https://github.com/jerryc127/hexo-theme-butterfly</a>): 现在正在使用的主题、页面、个性化都很好、集成了很多插件。</p>
-<p>Buttery主题<br>matery(<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">https://github.com/blinkfox/hexo-theme-matery</a>): 一个基于材料设计和响应式设计而成的全面、美观的Hexo主题。</p>
-<p>matery主题<br>更多关于主题的可以点击上述链接进入官网进行详细的了解。</p>
-<h4 id="4、博客部署"><a href="#4、博客部署" class="headerlink" title="4、博客部署"></a>4、博客部署</h4><p>博客已经搭建好了、如何部署到Web上呢？</p>
-<p>Github提供了Github Pages，Github Pages是Github免费给开发者提供的一款托管个人网站的产品，目前只能托管静态内容，我们使用Hexo搭建的就是静态博客， 所以非常适合用来搭博客。<br>当然还用Gitee Pages，就不作过多的介绍了。这里使用Github(Github速度太慢、Coding没弄好、所以还是使用Gitee)。</p>
-<p>简单介绍一些步骤及命令。(如果没有账号可以先去注册、这里直接讲创建仓库)</p>
-<p>步骤很简单，创建仓库、如图：</p>
-<p>创建步骤</p>
-<p>配置SSH-Key</p>
-<p>在Cmd中输入以下内容</p>
-<pre class="line-numbers language-none"><code class="language-none">git config --global user.name "你的用户名"
-
-git config --global user.email "你的邮箱@example.com"
-
-ssh-keygen -t rsa -C "你的邮箱e@example.com"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>然后找到生成的秘钥：位置在 C:/Users/你电脑的用户名/.ssh<br>用记事本打开id_rsa.pub复制里面的内容</p>
-<p>进入 <a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a> 点击New SSH Key把之前复制的内容粘贴到这里就可以了。</p>
-<p>添加SSH keys<br>安装部署插件</p>
-<pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>安装完成之后在_config.yml中配置：</p>
-<p>deploy:<br> type: git<br> repo: 你创建仓库的位置<br> branch: master</p>
-<p>如图：</p>
-<p>配置完成之后通过hexo d就可以部署到Github上了。</p>
-<p>Github网站地址：</p>
-<p>Settings<br>Gitee网址：</p>
-<p>服务-&gt;Gitee Pages</p>
-<h4 id="5、其他"><a href="#5、其他" class="headerlink" title="5、其他"></a>5、其他</h4><p>Hexo博客搭建完成了、主题也美化了、接下来就介绍几个常用的Hexo插件！</p>
-<p>Valine 评论功能</p>
-<p>无后端的评论功能。</p>
-<p>官方教程：<a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html">https://valine.js.org/quickstart.html</a></p>
-<p>效果如图：</p>
-<p>aplayer 音乐插件</p>
-<p>在线音乐播放器、支持一些平台的歌单播放。</p>
-<p>官方教程：<a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-aplayer">https://github.com/MoePlayer/hexo-tag-aplayer</a></p>
-<p>效果如图：</p>
-<p>bilibili-bangumi 番剧插件</p>
-<p>显示番剧：想看、在看、已看功能。</p>
-<p>官方教程：<a target="_blank" rel="noopener" href="https://github.com/HCLonely/hexo-bilibili-bangumi">https://github.com/HCLonely/hexo-bilibili-bangumi</a></p>
-<p>看板娘</p>
-<p>很可爱的Live2D！<br>Live2D Widget：<a target="_blank" rel="noopener" href="https://github.com/stevenjoezhang/live2d-widget">https://github.com/stevenjoezhang/live2d-widget</a><br>Live2D demo：<a target="_blank" rel="noopener" href="https://github.com/fghrsh/live2d_demo">https://github.com/fghrsh/live2d_demo</a></p>
-<p>效果如图：</p>
-<p>到这里、Hexo搭建博客到这里就结束了、更多功能可以查阅官方文档。<br>我的博客地址：<a target="_blank" rel="noopener" href="https://zykjofficial.gitee.io/">https://zykjofficial.gitee.io</a><br>博客的后续功能也会继续完善的。如果这篇文章对你有用的话、记得三连哟！！！</p>
+                <h2 id="Anaconda与Pycahrm的”联姻”"><a href="#Anaconda与Pycahrm的”联姻”" class="headerlink" title="Anaconda与Pycahrm的”联姻”"></a>Anaconda与Pycahrm的”联姻”</h2><p>▌图片：安装配置截图</p>
+<p>▌来源：八斗AI</p>
+<p>▌内容：教程安装系列</p>
+<p> <strong>从思想出发，去理解技术；用智慧推演，看人工智能</strong></p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_gif/s3Ta9USoico5yhicuJuGFZhtRUkoc4I7mt59WiboXBq3FVC8GkLxmOLkMicH4QGMdaBTgLLndJob8ib5MHZVD45XxVw/640?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p><strong>▍一、准备工作</strong></p>
+<p>在安装完Anaconda与pycharm之后，找到安装目录打开如下图标</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVsPgdmR90RLp8FeM5Iia7R2N3mLGSTe9rwWZgproycSkngfibZmD5xaVg/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>（这里是使用命令行的方式进入，推荐；也可以使用打开Anaconda界面的方法进入，即上图中绿色的Anaconda Navigator 图标）</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVtN4VuDWyfWPz2K9ggxJwkzNjkibyjXpXt6z6jtqNxFJQQO1ibtfXAkrA/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>这里的base是安装完Anaconda后，自动创建的环境，可以输入conda命令如：conda list查看base环境下安装的一些包</p>
+<p><strong>▍二、搭建环境</strong></p>
+<p>要学习conda 命令操作：资料链接 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/32925500">https://zhuanlan.zhihu.com/p/32925500</a></p>
+<p><strong>conda create –name <env_name> <package_names></package_names></env_name></strong></p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVwcyiboksxU4N1mAhjgJxeXjSNPJQWlZ4xmlynwESMEY95EFvQ49Wvhw/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>红框中的命令即新建一个环境，环境名自定义即可，并在环境中安装了python 3.7版本</p>
+<p>（因为我已经存在这个环境，所以这选择n，继续）</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRV3IwAuNe0oYkauabxdj3GhANt60NGEE1kPFgibicLMc9mnn4uvQBU3u7g/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>使用上图命令 conda info -e 查看所有环境，列表形式展现。</p>
+<p>使用 **conda activate <env_name>**进行环境的切换</env_name></p>
+<p>（这里注意，anaconda是一个环境管理软件，这里四个环境是不相干的，每个环境相互隔离，比如我在tf1中安装了tensorflow 1.X的版本，在pytorch中安装了 torch ，每个环境都有其对应的python包，可以使用 conda list 命令查看一些包的安装情况）</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVNPj0vEU0f1smvf8NAXayxicu74blprdnZaUMn6WtZY6rIB4YPNW4iaPA/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>使用**conda install <package_names>**的方式在对应的环境中，进行包的安装</package_names></p>
+<p>这里我是在pytorch环境进行 numpy 这个包的安装</p>
+<p>自此，环境已经安装完毕，下面讲解如何在pycharm进行环境的配置。</p>
+<p><strong><em>\</em>▍三、Pycharm环境配置**</strong></p>
+<p>打开pycharm：</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVn0TPOUzzKKlCMuWB8Jy9kwRwLGtqCQaicOXCCLAqZrgdPrX09TckeqA/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>这里我已经为工程配置好了 Project Interpreter，这个 Interpreter 就是对应环境下的 python的启动器，下面讲述如何一步一步进行配置。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVzxtceqhx6w1NA75WScNxHmqReM3UkaeEiarQRicGPDGfIDxPV0AfibAFQ/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>**<br>**</p>
+<p><strong>1）</strong>点击add</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVcCh2uep3IXZR2icZqFRic65wtGYr2xOPL787P8zKZEx5xiciasAKmJ8C0Q/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p><strong>2）</strong>选择 conda Environment ，这里默认是第一个，而我们要选择第二个</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRV6pXm1Qx8N3h2fEfLsnTd9ZDHBsTn79ktOWJdw8v8ZB1tmWupD74Syw/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p><strong>3）</strong>选择Existing environment</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVT5W3rFSroHDSakx5JalZDE5icNb5FESerp7r7l5rzlvEmDcIzluEDqQ/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>然后选择 Interpreter，这个路径是啥呢？就是在命令行查看环境信息时，各个环境的路径信息</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVZIDiaqEbd2NlMX3MB54FJV1eIbrrSGUtwXhcp1oyMJNwrkjVeGnnq5Q/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p><strong>4）</strong>点击Interpreter后的三个点 … 进行环境 interpreter的选择，按照上图的路径，选择你要添加的环境</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVomIJZOm4Tc0iaUroKqvuT5Dgn4HedEs0g7J8F89cEGDhOfYkiajsyLuQ/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>假设这里选择了 pytorch，点开，找到其中的 python.exe 的Interpreter，双击即可</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVrVXNex3aiaFUQ7A5O0zhudx8ZxEOpyOZTmBa6qmBibMzrXQ2NpQGC6dg/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>点击 OK，Pycharm与Anaconda 的“联姻”环境就配置完毕</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVCib0RLyuxbmLLu9nw41NKkHZRvPPUkAs9OFSniarezMeqaVa4chAlM3Q/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>**<br>**</p>
+<p><strong>5）</strong>如果操作步骤正确，可以看到，八斗二期的项目 Project Interpreter的环境配置变为了 pytorch</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/s3Ta9USoico7esyMze52icocbbgRFpMTRVZ4QCicYibYtOiaAiaBUzyxsNHbqPPT3UoZDSm0jQLYMzHhj8QVQdXO8kaA/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p><strong><em>*</em>*▍四、Future，just go！*\</strong>***</p>
+<p><strong><em>*</em>*<br>*\</strong>***</p>
+<p>pycharm 这个IDE是一个开发大杀器，还有许多的功能</p>
+<p>比如：远程连接，当然这是需要专业版；Debug……</p>
 
                 
             </div>
@@ -556,7 +507,7 @@ ssh-keygen -t rsa -C "你的邮箱e@example.com"<span aria-hidden="true" class="
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/02/12/build-hexo/">http://example.com/2021/02/12/build-hexo/</a>
+                    <a href="http://example.com/2021/02/14/anacoda-and-pycahrm/">http://example.com/2021/02/14/anacoda-and-pycahrm/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -594,8 +545,12 @@ ssh-keygen -t rsa -C "你的邮箱e@example.com"<span aria-hidden="true" class="
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/anacoda/">
+                                    <span class="chip bg-color">anacoda</span>
+                                </a>
+                            
+                                <a href="/tags/pycahrm/">
+                                    <span class="chip bg-color">pycahrm</span>
                                 </a>
                             
                         </div>
@@ -771,13 +726,13 @@ ssh-keygen -t rsa -C "你的邮箱e@example.com"<span aria-hidden="true" class="
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/02/13/emoji/">
+                <a href="/2021/02/15/git-duo-zhang-hao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="emoji表情">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="git多账号">
                         
-                        <span class="card-title">emoji表情</span>
+                        <span class="card-title">git多账号</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -788,27 +743,15 @@ ssh-keygen -t rsa -C "你的邮箱e@example.com"<span aria-hidden="true" class="
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-15
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/funny/" class="post-category">
-                                    funny
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            kanglu
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/emoji/">
-                        <span class="chip bg-color">emoji</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -820,13 +763,13 @@ ssh-keygen -t rsa -C "你的邮箱e@example.com"<span aria-hidden="true" class="
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/12/hello-world/">
+                <a href="/2021/02/14/tensorflow/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="tensorflow">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">tensorflow</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -837,14 +780,14 @@ ssh-keygen -t rsa -C "你的邮箱e@example.com"<span aria-hidden="true" class="
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/demo/" class="post-category">
-                                    demo
+                            <a href="/categories/AI/" class="post-category">
+                                    AI
                                 </a>
                             
                             
@@ -854,8 +797,8 @@ ssh-keygen -t rsa -C "你的邮箱e@example.com"<span aria-hidden="true" class="
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/tensorflow/">
+                        <span class="chip bg-color">tensorflow</span>
                     </a>
                     
                 </div>
