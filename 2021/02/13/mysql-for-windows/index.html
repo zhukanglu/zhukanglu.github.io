@@ -432,51 +432,51 @@
 <p>库管理系统)应用软件之一。</p>
 <p>首先：要先进入mysql官网里（Mysql的官网–&gt;<a target="_blank" rel="noopener" href="https://www.mysql.com/%EF%BC%89%EF%BC%8C%E4%B8%8B%E9%9D%A2%E6%98%AF%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4%EF%BC%9A">https://www.mysql.com/），下面是详细步骤：</a></p>
 <h2 id="一、下载安装包："><a href="#一、下载安装包：" class="headerlink" title="一、下载安装包："></a><strong>一、下载安装包：</strong></h2><p>　　①进入官网后，点击”Dowload”，然后页面往下拉</p>
-<p>　　<strong><img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915192559647-350219166.jpg" alt="img"></strong></p>
+<p>　　<strong><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915192559647-350219166.jpg" alt="img"></strong></p>
 <p>　　</p>
 <p>　　②接下来看到的页面是这样的，红色框框的链接就是mysql社区版，是免费的mysql版本，然后我们点击这个框框的链接：↓</p>
-<p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915192752591-1371678378.jpg" alt="img"></p>
+<p>　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915192752591-1371678378.jpg" alt="img"></p>
 <p>　　　 ③接下来跳转到这个页面，在这里，我们只要下载社区版的Server就可以了：↓</p>
-<p><img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915193055444-1634354218.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915193055444-1634354218.jpg" alt="img"></p>
 <p>　　④下载免安装版(windows以外的其他系统除外)</p>
-<p><img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915193247068-1867170933.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915193247068-1867170933.jpg" alt="img"></p>
 <p>　　 ***这样，安装包就下载好了！</p>
 <p>　　***注意，安装的目录应当放在指定位置，，其次，绝对路径中避免出现中文，推荐首选英文为命名条件！！！！(我的为参考)</p>
 <p>　　</p>
-<p>　　<strong><img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915193949895-2127429091.jpg" alt="img"></strong></p>
+<p>　　<strong><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915193949895-2127429091.jpg" alt="img"></strong></p>
 <h2 id="二、Mysql的配置"><a href="#二、Mysql的配置" class="headerlink" title="二、Mysql的配置"></a><strong>二、Mysql的配置</strong></h2><p>　　*<strong>以管理员身份打开命令行(如下图所示)，一定要是管理员身份，否则由于后续部分命令需要权限，出现错误！</strong></p>
-<p>　　<strong><img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194138600-1666145922.jpg" alt="img"></strong></p>
+<p>　　<strong><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915194138600-1666145922.jpg" alt="img"></strong></p>
 <p>　　</p>
 <p>　　①下转到mysql的bin目录下：**<br>**</p>
-<p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194319422-1269147823.jpg" alt="img"></p>
+<p>　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915194319422-1269147823.jpg" alt="img"></p>
 <p>　　②安装mysql的服务：mysqld –install</p>
-<p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194355509-621408710.jpg" alt="img"></p>
+<p>　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915194355509-621408710.jpg" alt="img"></p>
 <p>　　</p>
 <p>　　③初始化mysql，在这里，初始化会产生一个随机密码,如下图框框所示，记住这个密码，后面会用到(mysqld –initialize –console)</p>
 <p>　　</p>
-<p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194537624-1288770126.jpg" alt="img"></p>
+<p>　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915194537624-1288770126.jpg" alt="img"></p>
 <p>　　</p>
 <p>　　④开启mysql的服务(net start mysql)</p>
-<p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194809019-447378790.jpg" alt="img"></p>
+<p>　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915194809019-447378790.jpg" alt="img"></p>
 <p>　　⑤登录验证，mysql是否安装成功！(要注意上面产生的随机密码，不包括前面符号前面的空格，否则会登陆失败)，如果和下图所示一样，则说明你的mysql已经安装成功！注意，，一定要先开启服务，不然会登陆失败，出现拒绝访问的提示符！！！</p>
-<p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915194855594-1799062186.jpg" alt="img"></p>
+<p>　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915194855594-1799062186.jpg" alt="img"></p>
 <p>　　<strong>修改密码：</strong></p>
 <p>　　　　由于初始化产生的随机密码太复杂，，不便于我们登录mysql，因此，我们应当修改一个自己能记住的密码！！</p>
-<p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915195232011-1164270181.jpg" alt="img"></p>
+<p>　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915195232011-1164270181.jpg" alt="img"></p>
 <p>　　再次登录验证新密码：</p>
-<p>　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915195310138-1959548424.jpg" alt="img"></p>
+<p>　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915195310138-1959548424.jpg" alt="img"></p>
 <p>　　<strong>设置系统的全局变量：</strong></p>
 <p>　　　　为了方便登录操作mysql，在这里我们设置一个全局变量：↓</p>
 <p>　　　　①点击”我的电脑”–&gt;”属性”–&gt;’’高级系统设置’’–&gt;’’环境变量’’,接下来如下图所操作</p>
 <p>　　</p>
-<p>　　　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915195658938-215279743.jpg" alt="img"></p>
+<p>　　　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915195658938-215279743.jpg" alt="img"></p>
 <p>　　　　②把新建的mysql变量添加到Path路径变量中，点击确定，即完成：</p>
-<p>　　　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915195808186-1920486822.jpg" alt="img"></p>
+<p>　　　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915195808186-1920486822.jpg" alt="img"></p>
 <p>　　　　</p>
 <p>　　　　配置完成之后，每当我们想要用命令行使用mysql时，只需要win+R，–&gt;输入”cmd”打开命令行，之后输入登录sql语句即可。</p>
 <p>　　</p>
 <p>　　　　③在mysql目录下创建一个ini或cnf配置文件，在这里我创建的是ini配置文件，里面写的代码是mysql的一些基本配置</p>
-<p>　　　　<img src="https://img2018.cnblogs.com/blog/1727568/201909/1727568-20190915201058332-997469892.jpg" alt="img"></p>
+<p>　　　　<img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/1727568-20190915201058332-997469892.jpg" alt="img"></p>
 <p>　　就这样，一个免安装版的Mysql就安装并配置完成了</p>
 <h3 id="2-1可能会出现的问题"><a href="#2-1可能会出现的问题" class="headerlink" title="2.1可能会出现的问题"></a>2.1可能会出现的问题</h3><p> 1、ERROR 1045 (28000): Access denied for user ‘root’@’localhost’ (using password: NO/YES) </p>
 <p> 2、”由于找不到MSVCR120.dll，无法继续执行代码。重新安装程序可能会解决此问题” 或者 “由于找不到VCRUNTIME140_1.dll，无法继续执行代码。重新安装程序可能会解决此问题” </p>
