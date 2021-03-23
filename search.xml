@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>some photo</title>
+      <link href="2021/03/24/some-photo/"/>
+      <url>2021/03/24/some-photo/</url>
+      
+        <content type="html"><![CDATA[<p>春天萌芽</p><p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/DSC00055.JPG"></p><p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/DSC00942.JPG"></p><p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/DSC00626.JPG"></p><p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/DSC01193.JPG"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> everything </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> photo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git多账号</title>
       <link href="2021/02/15/git-duo-zhang-hao/"/>
       <url>2021/02/15/git-duo-zhang-hao/</url>
@@ -11,6 +36,18 @@
         <content type="html"><![CDATA[<h1 id="Git-设置多个账号"><a href="#Git-设置多个账号" class="headerlink" title="Git 设置多个账号"></a>Git 设置多个账号</h1><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>很多时候我们会有 <code>Github</code> 的账号，公司的 <code>GitLab</code> 账号（或者其他类型的 <code>Git</code> 账号），那我们就有多个<code>Git</code> 账号了，如何在一个终端中配置多个<code>Git</code> 账号呢？</p><h3 id="一：清除原有全局设置"><a href="#一：清除原有全局设置" class="headerlink" title="一：清除原有全局设置"></a>一：清除原有全局设置</h3><ul><li>这步不是必须的，如果你没有使用</li></ul><pre class="line-numbers language-csharp" data-language="csharp"><code class="language-csharp">git config --global user.name 'xxxxx' git config --global user.email 'xxxx' <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>设置过全局用户名、<code>email</code> 等信息，则不用清除原有设置。（当然如果你也记不得了，那就这么操作下吧）</p><ul><li>使用 <code>git</code> 命令取消全局设置</li></ul><pre class="line-numbers language-php" data-language="php"><code class="language-php">取消globalgit config --global --unset user.namegit config --global --unset user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="二：生成ssh-密钥"><a href="#二：生成ssh-密钥" class="headerlink" title="二：生成ssh 密钥"></a>二：生成ssh 密钥</h3><ul><li>首先我们在<code>~.ssh/</code> 文件夹下创建<code>company</code> 和<code>github</code> 文件夹，命令如下</li></ul><pre class="line-numbers language-undefined" data-language="undefined"><code class="language-undefined">mkdir companymkdir github<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>生成Gitlab 对应账号的ssh密钥，命令如下</li></ul><pre class="line-numbers language-css" data-language="css"><code class="language-css">ssh-keygen -t rsa -C <span class="token string">"your_gitlab_email@xxx.com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>执行完上面的命令后，命令行会弹出如下提示</li></ul><pre class="line-numbers language-ruby" data-language="ruby"><code class="language-ruby">Enter file in which to save the key (/Users/tuoanlan/.ssh/id_rsa):<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>输入地址保存<code>rsa</code> 文件到指定路径，如下(注意，我当前在.ssh 文件夹下，所以主意你指定的路径是否正确)</li></ul><pre class="line-numbers language-undefined" data-language="undefined"><code class="language-undefined">company/id_rsa_company<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>然后会让你输入密码的提示</li></ul><pre class="line-numbers language-php" data-language="php"><code class="language-php">Enter passphrase (empty for no passphrase):<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>这里一般不用输入密码，我们直接回车两次（不输入 <code>passphrase</code>）</li><li>当弹出如下提示</li></ul><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Your identification has been saved in company/id_rsrsa_company.Your public key has been saved in company/id_rsrsa_company.pub.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>说明<code>ssh</code> 密钥已经生成并保存在 <code>company</code> 文件夹下  <code>id_rsa_company</code> 和<code>id_rsa_company.pub</code>中</p><h3 id="二：将公钥添加到网站"><a href="#二：将公钥添加到网站" class="headerlink" title="二：将公钥添加到网站"></a>二：将公钥添加到网站</h3><ul><li>复制公钥，命令如下（当然你也可以手动复制）</li></ul><pre class="line-numbers language-css" data-language="css"><code class="language-css">pbcopy &lt;id_rsa_company.pub<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li><p>粘贴 到</p><pre class="line-numbers language-none"><code class="language-none">ssh key<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p> 的框中，然后点击 Add key 即可。如下图所示</p><p>image</p><p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/git1.png"></p></li><li><p>这里仅仅以 <code>Gitlab</code> 为例子，其他网站类似，不多赘述。</p></li></ul><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul><li>在<code>.ssh</code> 文件夹下创建 <code>config</code> 文件，并添加如下内容</li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># The git info for companyHost qdjr.git.zhudb.com                 # 写公司git 地址HostName qdjr.git.zhudb.com             # 写公司git 地址User git                                # 可以写邮箱名称，也可以写 git 账号IdentityFile ~/.ssh/company/id_rsa      #对应公司 git 账号密钥路径，注意不要写错# The git info for github           Host github.com                             # 写 github 的地址HostName github.com                         # 写 github 的地址User git                                    # 可以写邮箱名称，也可以写 git 账号IdentityFile ~/.ssh/github/id_rsa_github    # 对应github 密钥路径，注意不要写错<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>以上内容只是示例，如果想直接复制后修改，请复制如下内容到 <code>config</code> 中</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"># The git info for companyHost  qdjr.git.zhudb.comHostName  qdjr.git.zhudb.comUser zhangyg@baihang-china.comIdentityFile ~/.ssh/company/id_rsa_company# The git info for githubHost github.comHostName github.comUser gitIdentityFile ~/.ssh/github/id_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="把专用密钥添加到-ssh-agent-的高速缓存中"><a href="#把专用密钥添加到-ssh-agent-的高速缓存中" class="headerlink" title="把专用密钥添加到 ssh-agent 的高速缓存中"></a>把专用密钥添加到 ssh-agent 的高速缓存中</h3><p>执行命令 <code>ssh-add</code> 将 <code>IdentityFile</code> 添加到 <code>ssh-agent</code>高速缓存中，执行如下命令</p><pre class="line-numbers language-csharp" data-language="csharp"><code class="language-csharp">ssh-add ~/.ssh/company/id_rsa_company ssh-add ~/.ssh/github/id_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="验证是否配置成功"><a href="#验证是否配置成功" class="headerlink" title="验证是否配置成功"></a>验证是否配置成功</h3><ul><li>执行如下命令，验证是否配置成功</li></ul><pre class="line-numbers language-css" data-language="css"><code class="language-css">ssh -T git@qdjr.git.zhudb.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>第一次执行可能会弹出如下提示</li></ul><pre class="line-numbers language-rust" data-language="rust"><code class="language-rust">The authenticity of host 'qdjr.git.zhudb.com (121.43.184.183)' can't be established.ECDSA key fingerprint is SHA256:BGEoBwmuXjA3mzMGnU2dxvpdlPv8pxBDZgA3SKOFMVs.Are you sure you want to continue connecting (yes/no)? yes<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><ul><li>输入 yes，提示如下</li></ul><pre class="line-numbers language-php" data-language="php"><code class="language-php">Warning: Permanently added 'qdjr.git.zhudb.com,121.43.184.183' (ECDSA) to the list of known hosts.Welcome to GitLab, xxx！<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li>自此说明配置成功</li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul><li>首先我们建立了两个不同的文件夹来存放不同的<code>ssh key</code></li><li>通过<code>config</code> ，指定不同的 <code>git</code> 账号对应不同的 <code>ssh key</code></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
       
     </entry>
     
