@@ -3,11 +3,11 @@
   <title>MiLoog</title>
   
   <subtitle>BELIEF</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://zhukanglu.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://zhukanglu.github.io/"/>
   <updated>2021-03-22T16:57:13.048Z</updated>
-  <id>http://example.com/</id>
+  <id>https://zhukanglu.github.io/</id>
   
   <author>
     <name>kanglu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>git多账号</title>
-    <link href="http://example.com/2021/02/15/git-duo-zhang-hao/"/>
-    <id>http://example.com/2021/02/15/git-duo-zhang-hao/</id>
+    <link href="https://zhukanglu.github.io/2021/02/15/git-duo-zhang-hao/"/>
+    <id>https://zhukanglu.github.io/2021/02/15/git-duo-zhang-hao/</id>
     <published>2021-02-15T09:42:44.000Z</published>
     <updated>2021-03-22T16:57:13.048Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>Anacoda and Pycahrm</title>
-    <link href="http://example.com/2021/02/14/anacoda-and-pycahrm/"/>
-    <id>http://example.com/2021/02/14/anacoda-and-pycahrm/</id>
+    <link href="https://zhukanglu.github.io/2021/02/14/anacoda-and-pycahrm/"/>
+    <id>https://zhukanglu.github.io/2021/02/14/anacoda-and-pycahrm/</id>
     <published>2021-02-14T14:20:10.000Z</published>
     <updated>2021-03-23T16:52:04.492Z</updated>
     
@@ -55,19 +55,19 @@
     
     
     
-    <category term="AI" scheme="http://example.com/categories/AI/"/>
+    <category term="AI" scheme="https://zhukanglu.github.io/categories/AI/"/>
     
     
-    <category term="anacoda" scheme="http://example.com/tags/anacoda/"/>
+    <category term="anacoda" scheme="https://zhukanglu.github.io/tags/anacoda/"/>
     
-    <category term="pycahrm" scheme="http://example.com/tags/pycahrm/"/>
+    <category term="pycahrm" scheme="https://zhukanglu.github.io/tags/pycahrm/"/>
     
   </entry>
   
   <entry>
     <title>tensorflow</title>
-    <link href="http://example.com/2021/02/14/tensorflow/"/>
-    <id>http://example.com/2021/02/14/tensorflow/</id>
+    <link href="https://zhukanglu.github.io/2021/02/14/tensorflow/"/>
+    <id>https://zhukanglu.github.io/2021/02/14/tensorflow/</id>
     <published>2021-02-14T14:17:09.000Z</published>
     <updated>2021-03-23T17:04:22.034Z</updated>
     
@@ -82,17 +82,17 @@
     
     
     
-    <category term="AI" scheme="http://example.com/categories/AI/"/>
+    <category term="AI" scheme="https://zhukanglu.github.io/categories/AI/"/>
     
     
-    <category term="tensorflow" scheme="http://example.com/tags/tensorflow/"/>
+    <category term="tensorflow" scheme="https://zhukanglu.github.io/tags/tensorflow/"/>
     
   </entry>
   
   <entry>
     <title>Anacoda</title>
-    <link href="http://example.com/2021/02/14/anacoda/"/>
-    <id>http://example.com/2021/02/14/anacoda/</id>
+    <link href="https://zhukanglu.github.io/2021/02/14/anacoda/"/>
+    <id>https://zhukanglu.github.io/2021/02/14/anacoda/</id>
     <published>2021-02-14T13:49:44.000Z</published>
     <updated>2021-03-23T16:38:11.635Z</updated>
     
@@ -107,17 +107,17 @@
     
     
     
-    <category term="course" scheme="http://example.com/categories/course/"/>
+    <category term="course" scheme="https://zhukanglu.github.io/categories/course/"/>
     
     
-    <category term="anaconda" scheme="http://example.com/tags/anaconda/"/>
+    <category term="anaconda" scheme="https://zhukanglu.github.io/tags/anaconda/"/>
     
   </entry>
   
   <entry>
     <title>hexo语法</title>
-    <link href="http://example.com/2021/02/14/hexo-yu-fa-1/"/>
-    <id>http://example.com/2021/02/14/hexo-yu-fa-1/</id>
+    <link href="https://zhukanglu.github.io/2021/02/14/hexo-yu-fa-1/"/>
+    <id>https://zhukanglu.github.io/2021/02/14/hexo-yu-fa-1/</id>
     <published>2021-02-14T09:48:55.000Z</published>
     <updated>2021-02-14T11:23:07.942Z</updated>
     
@@ -134,14 +134,14 @@
     
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://zhukanglu.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>hexo-admin</title>
-    <link href="http://example.com/2021/02/14/hexo-admin/"/>
-    <id>http://example.com/2021/02/14/hexo-admin/</id>
+    <link href="https://zhukanglu.github.io/2021/02/14/hexo-admin/"/>
+    <id>https://zhukanglu.github.io/2021/02/14/hexo-admin/</id>
     <published>2021-02-14T09:44:16.000Z</published>
     <updated>2021-02-14T11:28:08.397Z</updated>
     
@@ -156,19 +156,19 @@
     
     
     
-    <category term="course" scheme="http://example.com/categories/course/"/>
+    <category term="course" scheme="https://zhukanglu.github.io/categories/course/"/>
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://zhukanglu.github.io/tags/hexo/"/>
     
-    <category term="admin" scheme="http://example.com/tags/admin/"/>
+    <category term="admin" scheme="https://zhukanglu.github.io/tags/admin/"/>
     
   </entry>
   
   <entry>
     <title>git小乌龟安装教程</title>
-    <link href="http://example.com/2021/02/14/git-install/"/>
-    <id>http://example.com/2021/02/14/git-install/</id>
+    <link href="https://zhukanglu.github.io/2021/02/14/git-install/"/>
+    <id>https://zhukanglu.github.io/2021/02/14/git-install/</id>
     <published>2021-02-14T04:20:31.000Z</published>
     <updated>2021-03-22T16:51:55.862Z</updated>
     
@@ -183,17 +183,17 @@
     
     
     
-    <category term="course" scheme="http://example.com/categories/course/"/>
+    <category term="course" scheme="https://zhukanglu.github.io/categories/course/"/>
     
     
-    <category term="git" scheme="http://example.com/tags/git/"/>
+    <category term="git" scheme="https://zhukanglu.github.io/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>mysql for windows</title>
-    <link href="http://example.com/2021/02/13/mysql-for-windows/"/>
-    <id>http://example.com/2021/02/13/mysql-for-windows/</id>
+    <link href="https://zhukanglu.github.io/2021/02/13/mysql-for-windows/"/>
+    <id>https://zhukanglu.github.io/2021/02/13/mysql-for-windows/</id>
     <published>2021-02-13T12:09:01.000Z</published>
     <updated>2021-03-22T16:42:52.766Z</updated>
     
@@ -209,17 +209,17 @@
     
     
     
-    <category term="course" scheme="http://example.com/categories/course/"/>
+    <category term="course" scheme="https://zhukanglu.github.io/categories/course/"/>
     
     
-    <category term="mysql" scheme="http://example.com/tags/mysql/"/>
+    <category term="mysql" scheme="https://zhukanglu.github.io/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>emoji表情</title>
-    <link href="http://example.com/2021/02/13/emoji/"/>
-    <id>http://example.com/2021/02/13/emoji/</id>
+    <link href="https://zhukanglu.github.io/2021/02/13/emoji/"/>
+    <id>https://zhukanglu.github.io/2021/02/13/emoji/</id>
     <published>2021-02-13T07:50:26.000Z</published>
     <updated>2021-02-14T11:17:35.803Z</updated>
     
@@ -243,17 +243,17 @@
     
     
     
-    <category term="funny" scheme="http://example.com/categories/funny/"/>
+    <category term="funny" scheme="https://zhukanglu.github.io/categories/funny/"/>
     
     
-    <category term="emoji" scheme="http://example.com/tags/emoji/"/>
+    <category term="emoji" scheme="https://zhukanglu.github.io/tags/emoji/"/>
     
   </entry>
   
   <entry>
     <title>build hexo</title>
-    <link href="http://example.com/2021/02/12/build-hexo/"/>
-    <id>http://example.com/2021/02/12/build-hexo/</id>
+    <link href="https://zhukanglu.github.io/2021/02/12/build-hexo/"/>
+    <id>https://zhukanglu.github.io/2021/02/12/build-hexo/</id>
     <published>2021-02-12T08:23:49.000Z</published>
     <updated>2021-02-14T11:13:28.618Z</updated>
     
@@ -268,17 +268,17 @@
     
     
     
-    <category term="blog" scheme="http://example.com/categories/blog/"/>
+    <category term="blog" scheme="https://zhukanglu.github.io/categories/blog/"/>
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://zhukanglu.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/02/12/hello-world/"/>
-    <id>http://example.com/2021/02/12/hello-world/</id>
+    <link href="https://zhukanglu.github.io/2021/02/12/hello-world/"/>
+    <id>https://zhukanglu.github.io/2021/02/12/hello-world/</id>
     <published>2021-02-12T01:27:01.839Z</published>
     <updated>2021-02-14T11:20:05.021Z</updated>
     
@@ -293,10 +293,10 @@
     
     
     
-    <category term="demo" scheme="http://example.com/categories/demo/"/>
+    <category term="demo" scheme="https://zhukanglu.github.io/categories/demo/"/>
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://zhukanglu.github.io/tags/hexo/"/>
     
   </entry>
   
