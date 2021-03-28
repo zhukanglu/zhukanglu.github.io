@@ -6,7 +6,7 @@
   <link href="https://zhukanglu.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhukanglu.github.io/"/>
-  <updated>2021-03-23T17:28:04.557Z</updated>
+  <updated>2021-03-28T15:33:46.147Z</updated>
   <id>https://zhukanglu.github.io/</id>
   
   <author>
@@ -17,9 +17,60 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GitHub访问</title>
+    <link href="https://zhukanglu.github.io/archives/github-fang-wen.html"/>
+    <id>https://zhukanglu.github.io/archives/github-fang-wen.html</id>
+    <published>2021-03-28T15:30:17.000Z</published>
+    <updated>2021-03-28T15:33:46.147Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;国内加速访问-GitHub&quot;&gt;&lt;a href=&quot;#国内加速访问-GitHub&quot; class=&quot;headerlink&quot; title=&quot;国内加速访问 GitHub&quot;&gt;&lt;/a&gt;国内加速访问 GitHub&lt;/h1&gt;&lt;p&gt;中国访问 GitHub</summary>
+        
+      
+    
+    
+    
+    <category term="github" scheme="https://zhukanglu.github.io/categories/github/"/>
+    
+    
+    <category term="haha" scheme="https://zhukanglu.github.io/tags/haha/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vnc 远程桌面控制</title>
+    <link href="https://zhukanglu.github.io/archives/vnc-server.html"/>
+    <id>https://zhukanglu.github.io/archives/vnc-server.html</id>
+    <published>2021-03-28T11:01:08.000Z</published>
+    <updated>2021-03-28T11:24:14.177Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5 id=&quot;1、安装-vino&quot;&gt;&lt;a href=&quot;#1、安装-vino&quot; class=&quot;headerlink&quot; title=&quot;1、安装 vino&quot;&gt;&lt;/a&gt;1、安装 vino&lt;/h5&gt;&lt;p&gt;sudo apt update&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="tool" scheme="https://zhukanglu.github.io/categories/tool/"/>
+    
+    
+    <category term="vnc" scheme="https://zhukanglu.github.io/tags/vnc/"/>
+    
+  </entry>
+  
+  <entry>
     <title>some photo</title>
-    <link href="https://zhukanglu.github.io/2021/03/24/some-photo/"/>
-    <id>https://zhukanglu.github.io/2021/03/24/some-photo/</id>
+    <link href="https://zhukanglu.github.io/archives/some-photo.html"/>
+    <id>https://zhukanglu.github.io/archives/some-photo.html</id>
     <published>2021-03-23T17:23:50.000Z</published>
     <updated>2021-03-23T17:28:04.557Z</updated>
     
@@ -45,8 +96,8 @@
   
   <entry>
     <title>git多账号</title>
-    <link href="https://zhukanglu.github.io/2021/02/15/git-duo-zhang-hao/"/>
-    <id>https://zhukanglu.github.io/2021/02/15/git-duo-zhang-hao/</id>
+    <link href="https://zhukanglu.github.io/archives/git-duo-zhang-hao.html"/>
+    <id>https://zhukanglu.github.io/archives/git-duo-zhang-hao.html</id>
     <published>2021-02-15T09:42:44.000Z</published>
     <updated>2021-03-23T17:28:38.068Z</updated>
     
@@ -70,8 +121,8 @@
   
   <entry>
     <title>Anacoda and Pycahrm</title>
-    <link href="https://zhukanglu.github.io/2021/02/14/anacoda-and-pycahrm/"/>
-    <id>https://zhukanglu.github.io/2021/02/14/anacoda-and-pycahrm/</id>
+    <link href="https://zhukanglu.github.io/archives/anacoda-and-pycahrm.html"/>
+    <id>https://zhukanglu.github.io/archives/anacoda-and-pycahrm.html</id>
     <published>2021-02-14T14:20:10.000Z</published>
     <updated>2021-03-23T16:52:04.492Z</updated>
     
@@ -97,8 +148,8 @@
   
   <entry>
     <title>tensorflow</title>
-    <link href="https://zhukanglu.github.io/2021/02/14/tensorflow/"/>
-    <id>https://zhukanglu.github.io/2021/02/14/tensorflow/</id>
+    <link href="https://zhukanglu.github.io/archives/tensorflow.html"/>
+    <id>https://zhukanglu.github.io/archives/tensorflow.html</id>
     <published>2021-02-14T14:17:09.000Z</published>
     <updated>2021-03-23T17:04:22.034Z</updated>
     
@@ -122,8 +173,8 @@
   
   <entry>
     <title>Anacoda</title>
-    <link href="https://zhukanglu.github.io/2021/02/14/anacoda/"/>
-    <id>https://zhukanglu.github.io/2021/02/14/anacoda/</id>
+    <link href="https://zhukanglu.github.io/archives/anacoda.html"/>
+    <id>https://zhukanglu.github.io/archives/anacoda.html</id>
     <published>2021-02-14T13:49:44.000Z</published>
     <updated>2021-03-23T16:38:11.635Z</updated>
     
@@ -147,8 +198,8 @@
   
   <entry>
     <title>hexo语法</title>
-    <link href="https://zhukanglu.github.io/2021/02/14/hexo-yu-fa-1/"/>
-    <id>https://zhukanglu.github.io/2021/02/14/hexo-yu-fa-1/</id>
+    <link href="https://zhukanglu.github.io/archives/hexo-yu-fa-1.html"/>
+    <id>https://zhukanglu.github.io/archives/hexo-yu-fa-1.html</id>
     <published>2021-02-14T09:48:55.000Z</published>
     <updated>2021-02-14T11:23:07.942Z</updated>
     
@@ -171,8 +222,8 @@
   
   <entry>
     <title>hexo-admin</title>
-    <link href="https://zhukanglu.github.io/2021/02/14/hexo-admin/"/>
-    <id>https://zhukanglu.github.io/2021/02/14/hexo-admin/</id>
+    <link href="https://zhukanglu.github.io/archives/hexo-admin.html"/>
+    <id>https://zhukanglu.github.io/archives/hexo-admin.html</id>
     <published>2021-02-14T09:44:16.000Z</published>
     <updated>2021-02-14T11:28:08.397Z</updated>
     
@@ -198,8 +249,8 @@
   
   <entry>
     <title>git小乌龟安装教程</title>
-    <link href="https://zhukanglu.github.io/2021/02/14/git-install/"/>
-    <id>https://zhukanglu.github.io/2021/02/14/git-install/</id>
+    <link href="https://zhukanglu.github.io/archives/git-install.html"/>
+    <id>https://zhukanglu.github.io/archives/git-install.html</id>
     <published>2021-02-14T04:20:31.000Z</published>
     <updated>2021-03-22T16:51:55.862Z</updated>
     
@@ -223,8 +274,8 @@
   
   <entry>
     <title>mysql for windows</title>
-    <link href="https://zhukanglu.github.io/2021/02/13/mysql-for-windows/"/>
-    <id>https://zhukanglu.github.io/2021/02/13/mysql-for-windows/</id>
+    <link href="https://zhukanglu.github.io/archives/mysql-for-windows.html"/>
+    <id>https://zhukanglu.github.io/archives/mysql-for-windows.html</id>
     <published>2021-02-13T12:09:01.000Z</published>
     <updated>2021-03-22T16:42:52.766Z</updated>
     
@@ -249,8 +300,8 @@
   
   <entry>
     <title>emoji表情</title>
-    <link href="https://zhukanglu.github.io/2021/02/13/emoji/"/>
-    <id>https://zhukanglu.github.io/2021/02/13/emoji/</id>
+    <link href="https://zhukanglu.github.io/archives/emoji.html"/>
+    <id>https://zhukanglu.github.io/archives/emoji.html</id>
     <published>2021-02-13T07:50:26.000Z</published>
     <updated>2021-02-14T11:17:35.803Z</updated>
     
@@ -283,8 +334,8 @@
   
   <entry>
     <title>build hexo</title>
-    <link href="https://zhukanglu.github.io/2021/02/12/build-hexo/"/>
-    <id>https://zhukanglu.github.io/2021/02/12/build-hexo/</id>
+    <link href="https://zhukanglu.github.io/archives/build-hexo.html"/>
+    <id>https://zhukanglu.github.io/archives/build-hexo.html</id>
     <published>2021-02-12T08:23:49.000Z</published>
     <updated>2021-02-14T11:13:28.618Z</updated>
     
@@ -308,8 +359,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://zhukanglu.github.io/2021/02/12/hello-world/"/>
-    <id>https://zhukanglu.github.io/2021/02/12/hello-world/</id>
+    <link href="https://zhukanglu.github.io/archives/hello-world.html"/>
+    <id>https://zhukanglu.github.io/archives/hello-world.html</id>
     <published>2021-02-12T01:27:01.839Z</published>
     <updated>2021-02-14T11:20:05.021Z</updated>
     

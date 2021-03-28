@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="tensorflow, MiLoog">
+    <meta name="keywords" content="emoji表情, MiLoog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>tensorflow | MiLoog</title>
+    <title>emoji表情 | MiLoog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -250,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">tensorflow</h1>
+                    <h1 class="description center-align post-title">emoji表情</h1>
                 </div>
             </div>
         </div>
@@ -371,8 +371,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/tensorflow/">
-                                <span class="chip bg-color">tensorflow</span>
+                            <a href="/tags/emoji/">
+                                <span class="chip bg-color">emoji</span>
                             </a>
                         
                     </div>
@@ -383,8 +383,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/AI/" class="post-category">
-                                AI
+                            <a href="/categories/funny/" class="post-category">
+                                funny
                             </a>
                         
                     </div>
@@ -396,7 +396,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-02-14
+                    2021-02-13
                 </div>
                 
 
@@ -405,7 +405,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    868
+                    35
                 </div>
                 
 
@@ -425,92 +425,109 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="9步教你安装完成tensorflow与pytorch"><a href="#9步教你安装完成tensorflow与pytorch" class="headerlink" title="9步教你安装完成tensorflow与pytorch"></a>9步教你安装完成tensorflow与pytorch</h2><p>#框架安装 1</p>
-<p>#tensorflow 45</p>
-<p>#pytorch 70</p>
-<p>▌图片：tensorflow官网、安装截图</p>
-<p>▌来源：八XX</p>
-<p>▌内容：教程安装系列</p>
-<p> <strong>从思想出发，去理解技术；用智慧推演，看人工智能</strong></p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/640" alt="图片"></p>
-<p><strong>前提：</strong>已安装完Anaconda </p>
-<p>咱们的课程资料⾥有学习链接：热爱生活的豆豆同学整理的</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/32925500">https://zhuanlan.zhihu.com/p/32925500</a></p>
-<p>（没装或者不懂的⼩伙伴可以学习下）</p>
-<p>这⾥咱们主要使⽤ Windows 中的Anaconda Prompt 进⾏安装，因为在Linux、Mac通⽤也是⼤同⼩异的</p>
-<p>​                        </p>
-<p><strong>▍第一步：打开Anaconda Prompt</strong></p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t1.png"></p>
-<p>配置镜像源，打开后，可以看到现在是base环境，就是安装完anaconda之后的自带环境（⾸先进⾏镜像源的配置，因为咱们⼤部分⼩伙伴在国内，但是tensorflow和pytorch却在国外，为了防⽌下载的时候出现⽹络问题，所以需要配置⼀下）</p>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-<pre class="line-numbers language-none"><code class="language-none">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/conda config --set show_channel_urls yesconda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>将以上命令，依次粘贴到命令框中</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t2.png"></p>
-<p><strong>▍第二步：创建你的专属开发环境</strong></p>
-<p>复制完毕后，我们需要创建⼀个新的环境，使⽤命令⾏</p>
-<p><strong>conda create -n tensorflow</strong>，其中 tensorflow是环境名，⼤家可以随意定义</p>
-<p>创建完成后，可以根据提⽰使⽤ <strong>conda activate 环境名</strong> 进⾏环境的激活</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t3.png"></p>
-<p><strong>▍第三步：查看你的包包</strong></p>
-<p>使⽤conda list命令查看环境下安装了哪些包，因为什么也没有安装，所以为空</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t4.png"></p>
-<p><strong>▍第四步：tensorflow的安装</strong></p>
-<p>使⽤<strong>conda install tensorflow=1.14</strong>进⾏tensorflow cpu版本的安装，版本可以选择（⽬前最新是2.2,1.X版本⼀般⽤1.14）</p>
-<p>如果想安装gpu版本的，需要先根据笔记本硬件安装 cuda 和 cuDNN ，具体的型号选择在咱们的课程资料中有对应链接</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t5.png"></p>
-<p>这⾥选择y，耐⼼等待，smoking……</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t6.png"></p>
-<p><strong>▍第五步：查看变化</strong></p>
-<p>（python什么也都安装好了，使⽤这种⽅法最惬意的点是tensorflow会⾃动适配⼀些库进⾏安装，在以后搬砖的⽇⼦⾥，不会有不良冲突）</p>
-<p>看这⾥Channel⼀列，⼤都为清华源的路径，让安装包们下载很快</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t7.png"></p>
-<p>有了tensorflow的安装基础，安装pytorch应该就轻⻋熟路了</p>
-<p><strong>▍第六步：安装pytorch</strong></p>
-<p>创建环境、激活环境、看环境</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
-<p><strong>▍第七步：上官网，找命令</strong></p>
-<p>因为torch⽐较特殊，不像安装tensorflow的命令可以背过</p>
-<p>pytroch官⽹：<a target="_blank" rel="noopener" href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p>
-<p>复制命令⾏进⾏安装</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t8.png"></p>
-<p>按照你⾃⼰电脑的配置，实事求是的进⾏选择，如果选择错了，轻则安装报错，重则安装报错后卸载不⼲净。但是这⾥不要将最后的 -c pytorch 加上，否则下载的时候是默认从官⽹下载，速度贼慢，去掉的话就是从咱们配置的清华源进⾏下载</p>
-<p>所以安装命令是 <strong>conda install pytorch torchvision cpuonly</strong></p>
-<p>**<br>**</p>
-<p><strong>▍第八步：conda list 看一看</strong></p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t9.png"></p>
-<p><strong>▍第九步：conda info –env 看一看</strong></p>
-<p>看看你的Anaconda中有几个环境，因为给⼤家做教程，所以⼜新建了tensorflow和torch两个环境，课程资料中的Anaconda与PyCharm的“联姻” 明日搬运</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/t10.png"></p>
-<p>最开始的时候：</p>
+                <p>emoji表情</p>
 <table>
 <thead>
 <tr>
-<th>环境名</th>
-<th>主要框架版本</th>
+<th><code>:sun_with_face:</code></th>
+<th>🌞</th>
+<th><code>:smile:</code></th>
+<th>😄</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>pytorch</td>
-<td>pytorch 1.5</td>
+<td><code>:laughing:</code></td>
+<td>😆</td>
+<td><code>:blush:</code></td>
+<td>😊</td>
 </tr>
 <tr>
-<td>tf1</td>
-<td>tensorflow 1.14</td>
+<td><code>:smiley:</code></td>
+<td>😃</td>
+<td><code>:relaxed:</code></td>
+<td>☺️</td>
 </tr>
 <tr>
-<td>tf2</td>
-<td>tensorflow 2.2</td>
+<td><code>:smirk:</code></td>
+<td>😏</td>
+<td><code>:heart_eyes:</code></td>
+<td>😍</td>
+</tr>
+<tr>
+<td><code>:kissing_heart:</code></td>
+<td>😘</td>
+<td><code>:kissing_closed_eyes:</code></td>
+<td>😚</td>
+</tr>
+<tr>
+<td><code>:flushed:</code></td>
+<td>😳</td>
+<td><code>:relieved:</code></td>
+<td>😌</td>
+</tr>
+<tr>
+<td><code>:satisfied:</code></td>
+<td>😆</td>
+<td><code>:grin:</code></td>
+<td>😁</td>
+</tr>
+<tr>
+<td><code>:wink:</code></td>
+<td>😉</td>
+<td><code>:stuck_out_tongue_winking_eye:</code></td>
+<td>😜</td>
+</tr>
+<tr>
+<td><code>:stuck_out_tongue_closed_eyes:</code></td>
+<td>😝</td>
+<td><code>:grinning:</code></td>
+<td>😀</td>
+</tr>
+<tr>
+<td><code>:kissing:</code></td>
+<td>😗</td>
+<td><code>:kissing_smiling_eyes:</code></td>
+<td>😙</td>
+</tr>
+<tr>
+<td><code>:stuck_out_tongue:</code></td>
+<td>😛</td>
+<td><code>:sleeping:</code></td>
+<td>😴</td>
+</tr>
+<tr>
+<td><code>:worried:</code></td>
+<td>😟</td>
+<td><code>:frowning:</code></td>
+<td>😦</td>
+</tr>
+<tr>
+<td><code>:anguished:</code></td>
+<td>😧</td>
+<td><code>:open_mouth:</code></td>
+<td>😮</td>
+</tr>
+<tr>
+<td><code>:confused:</code></td>
+<td>😕</td>
+<td><code>:hushed:</code></td>
+<td>😯</td>
+</tr>
+<tr>
+<td><code>:expressionless:</code></td>
+<td>😑</td>
+<td><code>:unamused:</code></td>
+<td>😒</td>
+</tr>
+<tr>
+<td><code>:sweat_smile:</code></td>
+<td>😅</td>
+<td><code>:sweat:</code></td>
+<td>😓</td>
 </tr>
 </tbody></table>
+<p><span class="github-emoji"><span>😛</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f61b.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<p><span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
 
                 
             </div>
@@ -537,7 +554,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhukanglu.github.io/2021/02/14/tensorflow/">https://zhukanglu.github.io/2021/02/14/tensorflow/</a>
+                    <a href="https://zhukanglu.github.io/archives/emoji.html">https://zhukanglu.github.io/archives/emoji.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -575,8 +592,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/tensorflow/">
-                                    <span class="chip bg-color">tensorflow</span>
+                                <a href="/tags/emoji/">
+                                    <span class="chip bg-color">emoji</span>
                                 </a>
                             
                         </div>
@@ -752,13 +769,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/02/14/anacoda-and-pycahrm/">
+                <a href="/archives/mysql-for-windows.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Anacoda and Pycahrm">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="mysql for windows">
                         
-                        <span class="card-title">Anacoda and Pycahrm</span>
+                        <span class="card-title">mysql for windows</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -769,61 +786,8 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-14
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-13
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/AI/" class="post-category">
-                                    AI
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/anacoda/">
-                        <span class="chip bg-color">anacoda</span>
-                    </a>
-                    
-                    <a href="/tags/pycahrm/">
-                        <span class="chip bg-color">pycahrm</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/02/14/anacoda/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Anacoda">
-                        
-                        <span class="card-title">Anacoda</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-14
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -839,8 +803,57 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/anaconda/">
-                        <span class="chip bg-color">anaconda</span>
+                    <a href="/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/archives/build-hexo.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="build hexo">
+                        
+                        <span class="card-title">build hexo</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/blog/" class="post-category">
+                                    blog
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>

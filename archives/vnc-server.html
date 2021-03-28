@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Anacoda and Pycahrm, MiLoog">
+    <meta name="keywords" content="vnc 远程桌面控制, MiLoog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Anacoda and Pycahrm | MiLoog</title>
+    <title>vnc 远程桌面控制 | MiLoog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -250,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Anacoda and Pycahrm</h1>
+                    <h1 class="description center-align post-title">vnc 远程桌面控制</h1>
                 </div>
             </div>
         </div>
@@ -371,12 +371,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/anacoda/">
-                                <span class="chip bg-color">anacoda</span>
-                            </a>
-                        
-                            <a href="/tags/pycahrm/">
-                                <span class="chip bg-color">pycahrm</span>
+                            <a href="/tags/vnc/">
+                                <span class="chip bg-color">vnc</span>
                             </a>
                         
                     </div>
@@ -387,8 +383,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/AI/" class="post-category">
-                                AI
+                            <a href="/categories/tool/" class="post-category">
+                                tool
                             </a>
                         
                     </div>
@@ -400,7 +396,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-02-14
+                    2021-03-28
                 </div>
                 
 
@@ -409,7 +405,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    664
+                    690
                 </div>
                 
 
@@ -429,58 +425,53 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Anaconda与Pycahrm的”联姻”"><a href="#Anaconda与Pycahrm的”联姻”" class="headerlink" title="Anaconda与Pycahrm的”联姻”"></a>Anaconda与Pycahrm的”联姻”</h2><p>▌图片：安装配置截图</p>
-<p>▌来源：八XX</p>
-<p>▌内容：教程安装系列</p>
-<p> <strong>从思想出发，去理解技术；用智慧推演，看人工智能</strong></p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/640"></p>
-<p><strong>▍一、准备工作</strong></p>
-<p>在安装完Anaconda与pycharm之后，找到安装目录打开如下图标</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p1.png"></p>
-<p>（这里是使用命令行的方式进入，推荐；也可以使用打开Anaconda界面的方法进入，即上图中绿色的Anaconda Navigator 图标）</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p2.png"></p>
-<p>这里的base是安装完Anaconda后，自动创建的环境，可以输入conda命令如：conda list查看base环境下安装的一些包</p>
-<p><strong>▍二、搭建环境</strong></p>
-<p>要学习conda 命令操作：资料链接 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/32925500">https://zhuanlan.zhihu.com/p/32925500</a></p>
-<p><strong>conda create –name <env_name> <package_names></package_names></env_name></strong></p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p3.png"></p>
-<p>红框中的命令即新建一个环境，环境名自定义即可，并在环境中安装了python 3.7版本</p>
-<p>（因为我已经存在这个环境，所以这选择n，继续）</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p4.png"></p>
-<p>使用上图命令 conda info -e 查看所有环境，列表形式展现。</p>
-<p>使用 **conda activate <env_name>**进行环境的切换</env_name></p>
-<p>（这里注意，anaconda是一个环境管理软件，这里四个环境是不相干的，每个环境相互隔离，比如我在tf1中安装了tensorflow 1.X的版本，在pytorch中安装了 torch ，每个环境都有其对应的python包，可以使用 conda list 命令查看一些包的安装情况）</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p5.png"></p>
-<p>使用**conda install <package_names>**的方式在对应的环境中，进行包的安装</package_names></p>
-<p>这里我是在pytorch环境进行 numpy 这个包的安装</p>
-<p>自此，环境已经安装完毕，下面讲解如何在pycharm进行环境的配置。</p>
-<p><strong><em>\</em>▍三、Pycharm环境配置**</strong></p>
-<p>打开pycharm：</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p6.png"></p>
-<p>这里我已经为工程配置好了 Project Interpreter，这个 Interpreter 就是对应环境下的 python的启动器，下面讲述如何一步一步进行配置。</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p7.png"></p>
-<p>**<br>**</p>
-<p><strong>1）</strong>点击add</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p8.png"></p>
-<p><strong>2）</strong>选择 conda Environment ，这里默认是第一个，而我们要选择第二个</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p9.png"></p>
-<p><strong>3）</strong>选择Existing environment</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p10.png"></p>
-<p>然后选择 Interpreter，这个路径是啥呢？就是在命令行查看环境信息时，各个环境的路径信息</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p11.png"></p>
-<p><strong>4）</strong>点击Interpreter后的三个点 … 进行环境 interpreter的选择，按照上图的路径，选择你要添加的环境</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p12.png"></p>
-<p>假设这里选择了 pytorch，点开，找到其中的 python.exe 的Interpreter，双击即可</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p13.png"></p>
-<p>点击 OK，Pycharm与Anaconda 的“联姻”环境就配置完毕</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p14.png"></p>
-<p>**<br>**</p>
-<p><strong>5）</strong>如果操作步骤正确，可以看到，八斗二期的项目 Project Interpreter的环境配置变为了 pytorch</p>
-<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/p15.png"></p>
-<p><strong><em>*</em>*▍四、Future，just go！*\</strong>***</p>
-<p><strong><em>*</em>*<br>*\</strong>***</p>
-<p>pycharm 这个IDE是一个开发大杀器，还有许多的功能</p>
-<p>比如：远程连接，当然这是需要专业版；Debug……</p>
+                <h5 id="1、安装-vino"><a href="#1、安装-vino" class="headerlink" title="1、安装 vino"></a>1、安装 vino</h5><p>sudo apt update</p>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328190500652.png" alt="image-20210328190500652"></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo apt install vino<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328190707168.png" alt="image-20210328190707168"></p>
+<h5 id="2、设-Enable-VNC-服务-（此时手动可打开-vnc-server）"><a href="#2、设-Enable-VNC-服务-（此时手动可打开-vnc-server）" class="headerlink" title="2、设 Enable VNC 服务 （此时手动可打开 vnc server）"></a>2、设 Enable VNC 服务 （此时手动可打开 vnc server）</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo ln -s ../vino-server.service /usr/lib/systemd/user/graphical-session.target.wants<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328190936057.png" alt="image-20210328190936057"></p>
+<p>配置 VNC server:</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">gsettings set org.gnome.Vino prompt-enabled false
+gsettings set org.gnome.Vino require-encryption false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328191001710.png" alt="image-20210328191001710"></p>
+<p>编辑 org.gnome,恢复丢失的“enabled”参数,输入一下命令进入文件，将下方 key 内容添加到<br>文件的最后面。保存并退出。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328191233930.png" alt="image-20210328191233930"></p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>key</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>enabled<span class="token punctuation">'</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>b<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>Enable remote access to the desktop<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>
+    If true, allows remote access to the desktop via the RFB
+    protocol. Users on remote machines may then connect to the
+    desktop using a VNC viewer.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>default</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>default</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>key</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328191354260.png" alt="image-20210328191354260"></p>
+<p>设置为 Gnome 编译模式</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo glib-compile-schemas /usr/share/glib-2.0/schemas<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>现在屏幕共享面板在单位控制中心工作…但这并不足以让 vino 运行!所以您需要在会话启动<br>时添加程序:Vino-server，使用以下命令行:<br>/usr/lib/vino/vino-server<br><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328191511043.png" alt="image-20210328191511043"><br>这种是属于手动启动，如果每次都需要手动启动会比较麻烦下面会设置开机自启动的形式。</p>
+<h5 id="3、设置-VNC-登陆密码-‘thepassword’-修改为自己的密码"><a href="#3、设置-VNC-登陆密码-‘thepassword’-修改为自己的密码" class="headerlink" title="3、设置 VNC 登陆密码(‘thepassword’ 修改为自己的密码)"></a>3、设置 VNC 登陆密码(‘thepassword’ 修改为自己的密码)</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">gsettings set org.gnome.Vino authentication-methods "['vnc']"
+gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328191637280.png" alt="image-20210328191637280"></p>
+<h5 id="4、重启机器，验证是否设置-vnc-成功"><a href="#4、重启机器，验证是否设置-vnc-成功" class="headerlink" title="4、重启机器，验证是否设置 vnc 成功"></a>4、重启机器，验证是否设置 vnc 成功</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo reboot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="5、设置开机自启动-VNC-Server"><a href="#5、设置开机自启动-VNC-Server" class="headerlink" title="5、设置开机自启动 VNC Server"></a>5、设置开机自启动 VNC Server</h5><p>VNC 服务器只有在您本地登录到 Jetson 之后才可用。如果您希望 VNC 自动可用，请使用系<br>统设置应用程序来启用自动登录。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">gsettings set org.gnome.Vino enabled true
+mkdir -p ~/.config/autostart
+vi ~/.config/autostart/vino-server.desktop<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>将下面的内容添加到该文件中，保存并退出。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">[Desktop Entry]
+Type=Application
+Name=Vino VNC server
+Exec=/usr/lib/vino/vino-server
+NoDisplay=true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328191944100.png" alt="image-20210328191944100"></p>
+<p>如果系统设置为需要输入用户密码才可以进入桌面，以上的改脚本需要等进入桌面后才会启<br>动，建议将系统设置为用户自动登录到桌面。<br>6、连接 VNC Server<br>使用 vnc viewer 软件进行 VNC 连接，首先需要查询 ip 地址，我这里查到的是 192.168.1.195，<br>输入 IP 地址后点击 OK，双击对应的 VNC 用户输入密码，最后进入到 VNC 界面</p>
+<p>如果系统设置为需要输入用户密码才可以进入桌面，以上的改脚本需要等进入桌面后才会启<br>动，建议将系统设置为用户自动登录到桌面。</p>
+<h5 id="6、连接-VNC-Server"><a href="#6、连接-VNC-Server" class="headerlink" title="6、连接 VNC Server"></a>6、连接 VNC Server</h5><p>使用 vnc viewer 软件进行 VNC 连接，首先需要查询 ip 地址，我这里查到的是 192.168.1.195，<br>输入 IP 地址后点击 OK，双击对应的 VNC 用户输入密码，最后进入到 VNC 界面</p>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328192232612.png" alt="image-20210328192232612"></p>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328192310608.png" alt="image-20210328192310608"></p>
+<p><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/image-20210328192401408.png" alt="image-20210328192401408"></p>
 
                 
             </div>
@@ -507,7 +498,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhukanglu.github.io/2021/02/14/anacoda-and-pycahrm/">https://zhukanglu.github.io/2021/02/14/anacoda-and-pycahrm/</a>
+                    <a href="https://zhukanglu.github.io/archives/vnc-server.html">https://zhukanglu.github.io/archives/vnc-server.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -545,12 +536,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/anacoda/">
-                                    <span class="chip bg-color">anacoda</span>
-                                </a>
-                            
-                                <a href="/tags/pycahrm/">
-                                    <span class="chip bg-color">pycahrm</span>
+                                <a href="/tags/vnc/">
+                                    <span class="chip bg-color">vnc</span>
                                 </a>
                             
                         </div>
@@ -726,13 +713,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/02/15/git-duo-zhang-hao/">
+                <a href="/archives/github-fang-wen.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="git多账号">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="GitHub访问">
                         
-                        <span class="card-title">git多账号</span>
+                        <span class="card-title">GitHub访问</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -743,14 +730,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-15
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-28
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/git/" class="post-category">
-                                    git
+                            <a href="/categories/github/" class="post-category">
+                                    github
                                 </a>
                             
                             
@@ -760,8 +747,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/haha/">
+                        <span class="chip bg-color">haha</span>
                     </a>
                     
                 </div>
@@ -775,13 +762,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/14/tensorflow/">
+                <a href="/archives/some-photo.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="tensorflow">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="some photo">
                         
-                        <span class="card-title">tensorflow</span>
+                        <span class="card-title">some photo</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -792,14 +779,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-24
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/AI/" class="post-category">
-                                    AI
+                            <a href="/categories/everything/" class="post-category">
+                                    everything
                                 </a>
                             
                             
@@ -809,8 +796,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/tensorflow/">
-                        <span class="chip bg-color">tensorflow</span>
+                    <a href="/tags/photo/">
+                        <span class="chip bg-color">photo</span>
                     </a>
                     
                 </div>
