@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="GitHub国内访问加速, MiLoog">
+    <meta name="keywords" content="Hexo自动部署, MiLoog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>GitHub国内访问加速 | MiLoog</title>
+    <title>Hexo自动部署 | MiLoog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -250,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">GitHub国内访问加速</h1>
+                    <h1 class="description center-align post-title">Hexo自动部署</h1>
                 </div>
             </div>
         </div>
@@ -371,8 +371,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/haha/">
-                                <span class="chip bg-color">haha</span>
+                            <a href="/tags/auto/">
+                                <span class="chip bg-color">auto</span>
                             </a>
                         
                     </div>
@@ -383,8 +383,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/github/" class="post-category">
-                                github
+                            <a href="/categories/Hexo/" class="post-category">
+                                Hexo
                             </a>
                         
                     </div>
@@ -405,7 +405,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    414
+                    660
                 </div>
                 
 
@@ -425,60 +425,137 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>中国访问 GitHub 的速度不忍直视，那就叫一个慢！</p>
-<pre class="line-numbers language-none"><code class="language-none">TEXT
-Q: 为什么访问速度会很慢？
-A: GitHub 在国内访问速度慢的问题原因有很多，但最直接和最主要的原因是 GitHub 的分发加速网络的域名遭到 dns 污染。
-TEXT
-Q: 如何解决 DNS 污染？
-A: 通过修改 hosts 解决污染问题。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><blockquote>
-<p>不需要科（）学（）上网，也不需要开代理加速器。</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文教程教你实现，如何将你的 Hexo 博客自动部署到多个平台</p>
+<ul>
+<li>GitHub</li>
+<li>GitLab</li>
+<li>Coding</li>
+<li>Gitee</li>
+</ul>
+<p>优点：</p>
+<ul>
+<li>编写文章，推送到 <code>GitHub</code> 即可实现自动部署</li>
+<li>利用 <code>GitHub</code> 的私有仓库将博客源码直接保存在 <code>GitHub</code> 上</li>
+</ul>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ol>
+<li><code>Hexo</code> 博客源码的仓库，在 <code>GitHub</code> 上。</li>
+<li><code>ssh</code> 密钥，参考文章：<a target="_blank" rel="noopener" href="https://sitoi.cn/posts/43508.html">Windows 下利用 Git 生成 SSH KEY 并配置到 GitHub</a></li>
+</ol>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>为需要部署的平台添加密钥</li>
+<li>修改 <code>_config.yml</code> 中的 <code>deploy</code> 配置</li>
+<li>在 GitHub 上设置 <code>Secrets</code></li>
+<li>创建 GitHub Action</li>
+</ol>
+<h2 id="为需要部署的平台添加密钥"><a href="#为需要部署的平台添加密钥" class="headerlink" title="为需要部署的平台添加密钥"></a>为需要部署的平台添加密钥</h2><p>按照之前的教程，只要你之前成功将 Hexo 的博客部署到 GitHub 上，那你电脑在 <code>~/.ssh</code> 目录下一定有以下三个文件：</p>
+<ul>
+<li><code>id_rsa</code>：私钥</li>
+<li><code>id_rsa.pub</code>：公钥</li>
+<li><code>known_hosts</code>：记录对所有用户都可信赖的远程主机的公钥</li>
+</ul>
+<p>将 <code>id_rsa.pub</code>（公钥）添加到不同平台中即可，参考文章：<a target="_blank" rel="noopener" href="https://sitoi.cn/posts/43508.html#%E6%9F%A5%E7%9C%8B-SSH-KEY">Windows 下利用 Git 生成 SSH KEY 并配置到 GitHub</a></p>
+<p>下面是不同平台添加的地址：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/settings/ssh/new">GitHub</a></li>
+<li><a target="_blank" rel="noopener" href="https://gitlab.com/profile/keys">GitLab</a></li>
+<li><a target="_blank" rel="noopener" href="https://e.coding.net/">Coding</a></li>
+<li><a target="_blank" rel="noopener" href="https://gitee.com/profile/sshkeys">Gitee</a></li>
+</ul>
+<h2 id="修改-config-yml-中的-deploy-配置"><a href="#修改-config-yml-中的-deploy-配置" class="headerlink" title="修改 _config.yml 中的 deploy 配置"></a>修改 <code>_config.yml</code> 中的 <code>deploy</code> 配置</h2><p>请使用 <code>ssh</code> (即以 <code>git@</code> 开头的 <code>clone</code> 链接) 的连接方式，根据直接的实际地址填写。</p>
+<pre class="line-numbers language-none"><code class="language-none">YAML
+deploy:
+  - type: git
+    repo:
+      github: git@github.com:Sitoi/Sitoi.github.io.git
+      coding: git@e.coding.net:Sitoi/Sitoi.git
+      gitee: git@gitee.com:sitoi/sitoi.git
+      gitlab: git@gitlab.com:Sitoi/sitoi.gitlab.io.git
+    branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="在-GitHub-上设置-Secrets"><a href="#在-GitHub-上设置-Secrets" class="headerlink" title="在 GitHub 上设置 Secrets"></a>在 GitHub 上设置 <code>Secrets</code></h2><ol>
+<li><p>进入到你在 <code>GitHub</code> 上面的源码仓库</p>
+</li>
+<li><p>点击右上角的 <code>Settings</code></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/repos_settings.png"><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/repos_settings.png" alt="Settings"></a></p>
+<p>Settings</p>
+</li>
+<li><p>点击左侧的 <code>Secrets</code></p>
+</li>
+<li><p>点击右上角的 <code>New secret</code></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/secrets.png"><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/secrets.png" alt="New secret"></a></p>
+<p>New secret</p>
+</li>
+<li><p>在 <code>Name</code> 中输入 <code>HEXO_DEPLOY_PRI</code>，在 <code>Value</code> 中填入 <code>id_rsa</code>（私钥）的全部内容</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/add_secret.png"><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/add_secret.png" alt="Add secret"></a></p>
+<p>Add secret</p>
+</li>
+</ol>
+<h2 id="创建-GitHub-Action"><a href="#创建-GitHub-Action" class="headerlink" title="创建 GitHub Action"></a>创建 GitHub Action</h2><ol>
+<li><p>点击项目上方的 <code>Action</code> 按钮</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/action.png"><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/action.png" alt="Action"></a></p>
+<p>Action</p>
+</li>
+<li><p>点击 <code>set up a workflow yourself</code> 创建 <code>Workflow</code></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/workflow.png"><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/workflow.png" alt="Workflow"></a></p>
+<p>Workflow</p>
+</li>
+<li><p>修改 <code>main.yaml</code> 的内容</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/create_workflow.png"><img src="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/hexo/create_workflow.png" alt="Create Workflow"></a></p>
+<p>Create Workflow</p>
+<blockquote>
+<p>根据实际情况修改成你自己的内容</p>
 </blockquote>
-<h3 id="一、查询网址对应的-IP-地址"><a href="#一、查询网址对应的-IP-地址" class="headerlink" title="一、查询网址对应的 IP 地址"></a>一、查询网址对应的 IP 地址</h3><p>查询地址：<a target="_blank" rel="noopener" href="https://www.ipaddress.com/">https://www.ipaddress.com/</a></p>
-<p>点击下面 <code>域名</code>（domain）自动跳转到 <code>ipaddress.com</code> 查询结果页面：</p>
-<ol>
-<li><a target="_blank" rel="noopener" href="https://github.com.ipaddress.com/">github.com</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com.ipaddress.com/assets-cdn.github.com">assets-cdn.github.com</a></li>
-<li><a target="_blank" rel="noopener" href="https://fastly.net.ipaddress.com/github.global.ssl.fastly.net">github.global.ssl.fastly.net</a></li>
+<ul>
+<li>Git 推送使用的用户名：git config –global user.name ‘sitoi’：</li>
+<li>Git 推送使用的邮箱：git config –global user.email ‘<a href="mailto:133397418@qq.com">133397418@qq.com</a>’</li>
+<li>Hexo 的版本：npm i <a href="mailto:hexo@4.1.1">hexo@4.1.1</a> -g</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">YAML
+name: Hexo CI
+
+on:
+  push:
+    branches:
+      - butterfly
+
+jobs:
+  butterfly-build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - name: env prepare
+        env:
+          HEXO_DEPLOY_PRI: ${{ secrets.HEXO_DEPLOY_PRI }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRI" &gt; ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com &gt;&gt; ~/.ssh/known_hosts
+          ssh-keyscan gitlab.com &gt;&gt; ~/.ssh/known_hosts
+          ssh-keyscan e.coding.net &gt;&gt; ~/.ssh/known_hosts
+          ssh-keyscan gitee.com &gt;&gt; ~/.ssh/known_hosts
+          git config --global user.name 'sitoi'
+          git config --global user.email '133397418@qq.com'
+          npm i
+          npm i hexo@4.1.1 -g
+      - name: gen
+        run: |
+          hexo clean
+          hexo generate
+          hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>将你的源码推送到 <code>GitHub</code> 上，你的博客一会就会自动更新了。</p>
+<p>文章引用: <a target="_blank" rel="noopener" href="https://sitoi.cn/posts/15908.html">https://sitoi.cn/posts/15908.html</a></p>
+</li>
 </ol>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns0.png"><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/GitHub-dns0.png" alt="github.com 对应 IP 结果"></a></p>
-<p>github.com 对应 IP 结果</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns1.png"><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/GitHub-dns1.png" alt="assets-cdn.github.com 对应 IP 结果"></a></p>
-<p>assets-cdn.github.com 对应 IP 结果</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns2.png"><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/GitHub-dns2.png" alt="github.global.ssl.fastly.net 对应 IP 结果"></a></p>
-<p>github.global.ssl.fastly.net 对应 IP 结果</p>
-<h3 id="二、修改本地系统-hosts-文件"><a href="#二、修改本地系统-hosts-文件" class="headerlink" title="二、修改本地系统 hosts 文件"></a>二、修改本地系统 hosts 文件</h3><blockquote>
-<p>hosts 文件路径：<code>C:\Windows\System32\drivers\etc\hosts</code></p>
-</blockquote>
-<ol>
-<li>以<strong>管理员</strong>身份打开 <code>CMD</code> 终端，并输入 <code>notepad</code> ，会打开一个记事本。</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns3.png"><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/GitHub-dns3.png" alt="记事本"></a></p>
-<p>记事本</p>
-<ol>
-<li>打开文件，输入 <code>hosts</code> 文件路径，选择所有文件，最后点击 <code>hosts</code> 自动打开该文件。</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns4.png"><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/GitHub-dns4.png" alt="打开 hosts 文件"></a></p>
-<p>打开 hosts 文件</p>
-<ol>
-<li>修改 <code>hosts</code> 文件，将查询到的 IP 和 域名写在 <code>hosts</code> 文件的最后即可</li>
-</ol>
-<pre class="line-numbers language-none"><code class="language-none">TEXT
-192.30.253.112    github.com
-185.199.108.153   assets-cdn.github.com
-185.199.109.153   assets-cdn.github.com
-185.199.110.153   assets-cdn.github.com
-185.199.111.153   assets-cdn.github.com
-199.232.5.194     github.global.ssl.fastly.net<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns5.png"><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/GitHub-dns5.png" alt="修改 hosts 文件"></a></p>
-<p>修改 hosts 文件</p>
-<h3 id="三、刷新本地系统-dns-缓存"><a href="#三、刷新本地系统-dns-缓存" class="headerlink" title="三、刷新本地系统 dns 缓存"></a>三、刷新本地系统 dns 缓存</h3><p>用 <code>WIN + R</code> 快捷键打开运行窗口，输入命令：<code>cmd</code> 并回车进入命令行窗口。</p>
-<p>接着输入命令：</p>
-<pre class="line-numbers language-none"><code class="language-none">CMD
-ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>回车后执行刷新本地 dns 缓存数据即可。</p>
-<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Sitoi/cdn/img/GitHub-dns6.png"><img src="https://raw.githubusercontent.com/zhukanglu/picbed/master/GitHub-dns6.png" alt="刷新系统 dns 缓存"></a></p>
 
                 
             </div>
@@ -505,7 +582,7 @@ ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></sp
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhukanglu.github.io/archives/github-fang-wen.html">https://zhukanglu.github.io/archives/github-fang-wen.html</a>
+                    <a href="https://zhukanglu.github.io/archives/hexo-zi-dong-bu-shu.html">https://zhukanglu.github.io/archives/hexo-zi-dong-bu-shu.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -543,8 +620,8 @@ ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></sp
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/haha/">
-                                    <span class="chip bg-color">haha</span>
+                                <a href="/tags/auto/">
+                                    <span class="chip bg-color">auto</span>
                                 </a>
                             
                         </div>
@@ -716,9 +793,10 @@ ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></sp
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/archives/hexo-zi-dong-bu-shu.html">
                     <div class="card-image">
@@ -736,9 +814,9 @@ ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></sp
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -751,6 +829,7 @@ ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></sp
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -769,13 +848,13 @@ ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></sp
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/archives/vnc-server.html">
+                <a href="/archives/github-fang-wen.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="vnc 远程桌面控制">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="GitHub国内访问加速">
                         
-                        <span class="card-title">vnc 远程桌面控制</span>
+                        <span class="card-title">GitHub国内访问加速</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -792,8 +871,8 @@ ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></sp
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/tool/" class="post-category">
-                                    tool
+                            <a href="/categories/github/" class="post-category">
+                                    github
                                 </a>
                             
                             
@@ -803,8 +882,8 @@ ipconfig /flushdns <span aria-hidden="true" class="line-numbers-rows"><span></sp
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vnc/">
-                        <span class="chip bg-color">vnc</span>
+                    <a href="/tags/haha/">
+                        <span class="chip bg-color">haha</span>
                     </a>
                     
                 </div>
