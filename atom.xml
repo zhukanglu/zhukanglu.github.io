@@ -6,7 +6,7 @@
   <link href="https://zhukanglu.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhukanglu.github.io/"/>
-  <updated>2021-03-28T15:44:12.267Z</updated>
+  <updated>2021-09-11T17:43:48.303Z</updated>
   <id>https://zhukanglu.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker-install-oracle12</title>
+    <link href="https://zhukanglu.github.io/archives/docker-install-oracle12.html"/>
+    <id>https://zhukanglu.github.io/archives/docker-install-oracle12.html</id>
+    <published>2021-09-11T12:09:13.000Z</published>
+    <updated>2021-09-11T17:43:48.303Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;查询docker镜像&quot;&gt;&lt;a href=&quot;#查询docker镜像&quot; class=&quot;headerlink&quot; title=&quot;查询docker镜像&quot;&gt;&lt;/a&gt;查询docker镜像&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-shell&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="docker" scheme="https://zhukanglu.github.io/categories/docker/"/>
+    
+    
+    <category term="oracle" scheme="https://zhukanglu.github.io/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu安装Docker</title>
+    <link href="https://zhukanglu.github.io/archives/docker.html"/>
+    <id>https://zhukanglu.github.io/archives/docker.html</id>
+    <published>2021-09-11T10:11:01.000Z</published>
+    <updated>2021-09-11T12:09:42.986Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Ubuntu安装Docker&quot;&gt;&lt;a href=&quot;#Ubuntu安装Docker&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu安装Docker&quot;&gt;&lt;/a&gt;Ubuntu安装Docker&lt;/h1&gt;&lt;h2 id=&quot;1-更新软件源列表&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="docker" scheme="https://zhukanglu.github.io/categories/docker/"/>
+    
+    
+    <category term="docker" scheme="https://zhukanglu.github.io/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo自动部署</title>
