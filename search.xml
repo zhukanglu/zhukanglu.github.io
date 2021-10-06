@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>阿里云服务器Linux上搭建利用jpress搭建个人博客</title>
+      <link href="archives/ali-jpress.html"/>
+      <url>archives/ali-jpress.html</url>
+      
+        <content type="html"><![CDATA[<p>利用Linux操作系统和JPress搭建个人博客</p><h3 id="1、-在你的Linux系统上安装docker"><a href="#1、-在你的Linux系统上安装docker" class="headerlink" title="1、 在你的Linux系统上安装docker"></a>1、 在你的Linux系统上安装docker</h3><p>1.1 可以直接利用命令进行安装，命令如下：<br>yum install docker-io //安装docker<br>需要注意的是，安装的过程中会有一个让你去选择的过程：</p><p>根据提示打出y即可；<br>当docker安装完成后，会显示：Complete!<br>1.2 安装完成后，记得启动docker！命令如下：<br>service docker start</p><h3 id="2、-安装Tomcat镜像："><a href="#2、-安装Tomcat镜像：" class="headerlink" title="2、 安装Tomcat镜像："></a>2、 安装Tomcat镜像：</h3><p>2.1 Linux线上搜索Tomcat镜像，命令如下：<br>docker search Tomcat //这个命令会自动在网上搜索Tomcat镜像<br>2.2 根据他搜索到的名字，选择性的安装Tomcat镜像，最好选择start 数最高的那个，它是官方的，利用命令：<br>docker pull docker.io/tomcat<br>//这个命令会让docker安装名为docker.io/tomcat的Tomcat镜像<br>该命令输入完成后，就可以在此处等待Tomcat镜像安装完成了。<br>2.3 这个时候我们可以尝试使用命令：<br>docker images //查看docker下所有的镜像<br>查看Tomcat镜像是否安装成功。<br>不出意外应该是安装成功了！</p><h3 id="3、-启动Tomcat"><a href="#3、-启动Tomcat" class="headerlink" title="3、 启动Tomcat"></a>3、 启动Tomcat</h3><p>3.1 利用命令：<br>docker run -p 8081:8080 docker.io/tomcat<br>//注意：8081是外部访问端口，如果你使用的是阿里云服务器，那你需要设置下，使得服务器的端口暴露出来。<br>值得一提的是，这个启动Tomcat服务的过程十分漫长（反正我是觉得十分漫长，长到让我怀疑我错了），总之你执行这个命令等待他完成即可。<br>3.2 启动完成后，你可以使用浏览器访问，访问格式：<br>服务器ip地址：外网端口号，如0.0.0.0:8081</p><h3 id="4、-安装mysql"><a href="#4、-安装mysql" class="headerlink" title="4、 安装mysql"></a>4、 安装mysql</h3><p>这个部分我不想过多赘述了，基本跟Tomcat的操作步骤相同。记得也要开启，他是为jpress提供数据库。</p><h3 id="5、-安装jpress-war"><a href="#5、-安装jpress-war" class="headerlink" title="5、 安装jpress.war"></a>5、 安装jpress.war</h3><p>5.1 你可以直接访问JPress官网，然后点击它的下载，他会把你带到码云里面去下载它的工程文件，但是我们在Linux上面运行不需要太多文件，使用war文件就可以了。我在下载的时候，发现找不到wars文件夹，然后我看到他下面有说旧版本请点击XXX链接，我果断点了那个链接，成功找到了jpress.war！<br>5.2 现在你需要做的就是将本地下载好的war文件，下载到你想保存的文件夹中如：/usr/blog，这个过程我建议使用你的远程连接工具中的图形界面工具去完成。</p><h3 id="6、-建立jpress镜像"><a href="#6、-建立jpress镜像" class="headerlink" title="6、 建立jpress镜像"></a>6、 建立jpress镜像</h3><p>6.1 当你的war文件上传完成后，我们现在需要让jpress依赖Tomcat去执行，可以在blog文件夹中建立一个docker文件，命令如下：<br>vi Dockerfile<br>此时你将建立一个docker文件，并且进入文件内部，此时你按下A进入编辑状态，输入以下几行代码：<br>from docker.io/tomcat:latest //你的 tomcat的镜像<br>MAINTAINER XXX@yiye //作者<br>COPY NginxDemo.war /usr/local/tomcat/webapps //放置到tomcat的webapps目录下<br>编辑完成之后，按下esc键，然后按下：wq注意，只有q的话，是不会保存的。<br>6.2 此文件编辑完成中后，就可以建立你的jpress镜像了，使用命令：<br>docker build -t jpress:v1 . //注意:最后那个英文句号不能省略,否则会报错<br>建立成功后如下图所示:</p><p>6.3 最后，使用命令：<br>docker run -p 8080:8080 jpress:v1<br>启动jpress镜像。</p><h3 id="7、-检测："><a href="#7、-检测：" class="headerlink" title="7、 检测："></a>7、 检测：</h3><p>如果你上述所有步骤都没错的话，那么此时利用ip访问端口号/jpress，应该就能访问到如下页面</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jpress </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>docker-install-oracle12</title>
       <link href="archives/docker-install-oracle12.html"/>
       <url>archives/docker-install-oracle12.html</url>

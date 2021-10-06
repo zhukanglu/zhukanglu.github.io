@@ -6,7 +6,7 @@
   <link href="https://zhukanglu.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhukanglu.github.io/"/>
-  <updated>2021-09-11T17:43:48.303Z</updated>
+  <updated>2021-09-14T16:18:30.387Z</updated>
   <id>https://zhukanglu.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿里云服务器Linux上搭建利用jpress搭建个人博客</title>
+    <link href="https://zhukanglu.github.io/archives/ali-jpress.html"/>
+    <id>https://zhukanglu.github.io/archives/ali-jpress.html</id>
+    <published>2021-09-14T16:15:59.000Z</published>
+    <updated>2021-09-14T16:18:30.387Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;利用Linux操作系统和JPress搭建个人博客&lt;/p&gt;
+&lt;h3 id=&quot;1、-在你的Linux系统上安装docker&quot;&gt;&lt;a href=&quot;#1、-在你的Linux系统上安装docker&quot; class=&quot;headerlink&quot; title=&quot;1、</summary>
+        
+      
+    
+    
+    
+    <category term="docker" scheme="https://zhukanglu.github.io/categories/docker/"/>
+    
+    
+    <category term="jpress" scheme="https://zhukanglu.github.io/tags/jpress/"/>
+    
+  </entry>
   
   <entry>
     <title>docker-install-oracle12</title>
